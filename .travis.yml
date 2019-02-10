@@ -11,8 +11,12 @@ script:
   # Build the Drupal image.
   - docker build -t geerlingguy/drupal-example-kubernetes .
 
-  # Bring up the environment.
+  # Bring up the environment, wait for MySQL to be reachable.
   - docker-compose up -d
+  - |
+    while ! mysqladmin ping -h127.0.0.1 -u drupal -pdrupal --silent; do
+      sleep 1
+    done
 
   # Install Drupal.
   - docker-compose exec drupal bash -c "vendor/bin/drush site-install standard --db-url="mysql://drupal:$DRUPAL_DB_PASSWORD@$DRUPAL_DB_HOST/drupal" --site-name='Drupal Example Site for Kubernetes' -y"
