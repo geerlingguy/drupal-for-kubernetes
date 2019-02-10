@@ -1,0 +1,30 @@
+---
+version: '3'
+
+services:
+  drupal:
+    image: geerlingguy/drupal-example-kubernetes:latest
+    container_name: drupal-example-kubernetes
+    environment:
+      DRUPAL_DB_HOST: mysql
+      DRUPAL_DB_PASSWORD: drupal
+      DRUPAL_DOWNLOAD_IF_NOT_PRESENT: "false"
+    ports:
+      - "80:80"
+    restart: always
+    # Uncomment the line below to share the local codebase (in the same
+    # directory as this docker-compose file) directly into the container.
+    # volumes: ['./:/var/www/html:rw,delegated']
+
+  mysql:
+    image: mysql:5.7
+    container_name: drupal-mysql
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+      MYSQL_DATABASE: drupal
+      MYSQL_USER: drupal
+      MYSQL_PASSWORD: drupal
+    ports:
+      - "3306:3306"
+    volumes:
+      - /var/lib/mysql
