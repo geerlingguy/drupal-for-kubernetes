@@ -3,8 +3,8 @@ version: '3'
 
 services:
   drupal:
-    image: geerlingguy/drupal-example-kubernetes:latest
-    container_name: drupal-example-kubernetes
+    image: geerlingguy/drupal-for-kubernetes:latest
+    container_name: drupal-for-kubernetes
     environment:
       DRUPAL_DB_HOST: mysql
       DRUPAL_DB_PASSWORD: drupal

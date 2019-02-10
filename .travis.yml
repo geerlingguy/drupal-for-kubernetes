@@ -9,7 +9,7 @@ before_install:
 
 script:
   # Build the Drupal image.
-  - docker build -t geerlingguy/drupal-example-kubernetes .
+  - docker build -t geerlingguy/drupal-for-kubernetes .
 
   # Bring up the environment, wait for MySQL to be reachable.
   - cp tests/docker-compose.yml ./docker-compose.yml

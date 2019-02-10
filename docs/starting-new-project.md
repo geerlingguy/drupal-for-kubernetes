@@ -21,7 +21,7 @@ Part of the purpose of this project is to outline the exact steps required to bu
   1. Build the docker image from the Dockerfile:
 
          ```
-         docker build -t geerlingguy/drupal-example-kubernetes .
+         docker build -t geerlingguy/drupal-for-kubernetes .
          ```
 
   1. Modify the `docker-compose.yml` by commenting out the `volumes` section under the `drupal` service (since for now, we're testing the production container build, not the local development environment).

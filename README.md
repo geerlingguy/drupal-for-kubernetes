@@ -1,6 +1,6 @@
 # Drupal Example Site for Kubernetes
 
-[![Build Status](https://travis-ci.com/geerlingguy/drupal-example-kubernetes.svg?branch=master)](https://travis-ci.com/geerlingguy/drupal-example-kubernetes)
+[![Build Status](https://travis-ci.com/geerlingguy/drupal-for-kubernetes.svg?branch=master)](https://travis-ci.com/geerlingguy/drupal-for-kubernetes)
 
 The purpose of this Drupal codebase is to demonstrate a Drupal project and configuration set up for deployment into Kubernetes or an otherwise scalable containerized environment.
 
@@ -15,7 +15,7 @@ Please read through the [project documentation](docs/README.md) for details abou
   1. Build the site's docker image from the Dockerfile:
 
          ```
-         docker build -t geerlingguy/drupal-example-kubernetes .
+         docker build -t geerlingguy/drupal-for-kubernetes .
          ```
 
   1. Run the local development environment:
