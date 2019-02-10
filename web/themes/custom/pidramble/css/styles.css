@@ -1,0 +1,28 @@
+/**
+ * @file
+ * Presentational styles for Drupal pidramble theme.
+ */
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #000;
+}
+
+.site-logo {
+  float: left;
+  margin: 0 1.5em 0 0;
+  height: 73px;
+  width: 60px;
+}
+
+.site-name {
+  font-size: 2rem;
+  margin: .25em 0;
+}
+
+.site-name a {
+  text-decoration: none;
+  color: #000;
+}

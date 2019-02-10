@@ -1,0 +1,5 @@
+# Schema for the configuration files of the pidramble theme.
+
+pidramble.settings:
+  type: theme_settings
+  label: 'pidramble settings'
