@@ -5,6 +5,7 @@ COPY composer.json composer.json
 COPY composer.lock composer.lock
 COPY scripts/ scripts/
 COPY web/ web/
+COPY config/ config/
 
 RUN composer install \
     --ignore-platform-reqs \

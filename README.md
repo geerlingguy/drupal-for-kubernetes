@@ -6,24 +6,19 @@ The purpose of this Drupal codebase is to demonstrate a Drupal project and confi
 
 The project is used in tandem with the [Raspberry Pi Dramble](http://www.pidramble.com), an open source Kubernetes cluster tailor made for Drupal meant to run on a cluster of Raspberry Pis.
 
-## Initial setup
+## Documentation
 
-Part of the purpose of this project is to outline the exact steps required to build _your own_ Drupal site which is deployable inside Kubernetes, so the following section outlines every step used to initialize the codebase and prep it for a container environment:
+Please read through the [project documentation](docs/README.md) for details about how this project was created, how it's structured for easy development and deployment into production container environments, and how you can create your _own_ Drupal project like it.
 
-  1. Build the basic Drupal codebase using the [Composer template for Drupal projects](https://github.com/drupal-composer/drupal-project):
+## Local setup
 
-         ```
-         composer create-project drupal-composer/drupal-project:8.x-dev directory --no-interaction
-         ```
-
-  1. Create a [`Dockerfile`](Dockerfile) and [`docker-compose.yml`](docker-compose.yml) to build a Docker image to run the site both locally and in production—using the exact same Docker container!
-  1. Build the docker image from the Dockerfile:
+  1. Build the site's docker image from the Dockerfile:
 
          ```
          docker build -t geerlingguy/drupal-example-kubernetes .
          ```
 
-  1. Verify you can run the site in the container image locally:
+  1. Run the local development environment:
 
          ```
          docker-compose up -d
@@ -31,17 +26,19 @@ Part of the purpose of this project is to outline the exact steps required to bu
 
      (Wait for the environment to come up—you can monitor the logs with `docker-compose logs -f`).
 
-  1. Once the container is running, you need to install Drupal. You can either access http://localhost/ and install using the UI, or install via Drush:
+  1. Once the container is running, install Drupal. You can either access http://localhost/ and install using the UI, or install via Drush:
 
          ```
-         docker-compose exec drupal bash -c 'vendor/bin/drush site-install standard --db-url="mysql://drupal:$DRUPAL_DB_PASSWORD@$DRUPAL_DB_HOST/drupal" --site-name="Drupal Example Site for Kubernetes" -y'
+         docker-compose exec drupal bash -c 'vendor/bin/drush site:install minimal --db-url="mysql://drupal:$DRUPAL_DB_PASSWORD@$DRUPAL_DB_HOST/drupal" --site-name="Drupal Example Site for Kubernetes" --existing-config -y'
          ```
 
   1. Visit http://localhost/ in your browser, and login as `admin` using the password Drush printed in the 'Installation complete' message.
 
-## Push the image to a Docker registry
+### Managing Configuration
 
-TODO.
+After making any configuration changes on the website, you can export the configuration to disk so it can be preserved in the codebase and deployed to the production site:
+
+    docker-compose exec drupal bash -c 'vendor/bin/drush config:export -y'
 
 ## License
 

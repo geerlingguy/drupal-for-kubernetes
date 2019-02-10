@@ -12,9 +12,9 @@ services:
     ports:
       - "80:80"
     restart: always
-    # Uncomment the line below to share the local codebase (in the same
-    # directory as this docker-compose file) directly into the container.
-    # volumes: ['./:/var/www/html:rw,delegated']
+    # Share the project into the container for local development. Comment out
+    # this line to test the production-ready pre-built container codebase.
+    volumes: ['./:/var/www/html:rw,delegated']
 
   mysql:
     image: mysql:5.7
