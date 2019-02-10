@@ -12,6 +12,7 @@ script:
   - docker build -t geerlingguy/drupal-example-kubernetes .
 
   # Bring up the environment, wait for MySQL to be reachable.
+  - cp tests/docker-compose.yml ./docker-compose.yml
   - docker-compose up -d
   - |
     while ! mysqladmin ping -h127.0.0.1 -u drupal -pdrupal --silent; do
