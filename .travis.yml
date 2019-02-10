@@ -4,6 +4,9 @@ services: docker
 php:
   - 7.2
 
+before_install:
+  - sudo service mysql stop
+
 script:
   # Build the Drupal image.
   - docker build -t geerlingguy/drupal-example-kubernetes .
