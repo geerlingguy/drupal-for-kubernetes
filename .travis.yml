@@ -9,9 +9,10 @@ before_install:
 
 script:
   # Build the Drupal image.
-  - docker build -t geerlingguy/drupal-example-kubernetes .
+  - docker build -t geerlingguy/drupal-for-kubernetes .
 
   # Bring up the environment, wait for MySQL to be reachable.
+  - cp tests/docker-compose.yml ./docker-compose.yml
   - docker-compose up -d
   - |
     while ! mysqladmin ping -h127.0.0.1 -u drupal -pdrupal --silent; do
@@ -19,7 +20,13 @@ script:
     done
 
   # Install Drupal.
-  - docker-compose exec drupal bash -c 'vendor/bin/drush site-install standard --db-url="mysql://drupal:$DRUPAL_DB_PASSWORD@$DRUPAL_DB_HOST/drupal" --site-name="Drupal Example Site for Kubernetes" -y'
+  - >
+    docker-compose exec drupal bash -c
+    'vendor/bin/drush site:install minimal
+    --db-url="mysql://drupal:$DRUPAL_DB_PASSWORD@$DRUPAL_DB_HOST/drupal"
+    --site-name="Drupal Example Site for Kubernetes"
+    --existing-config
+    -y'
 
   # Verify Drupal is running.
   - curl --head http://localhost/
