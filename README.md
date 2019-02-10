@@ -1,5 +1,7 @@
 # Drupal Example Site for Kubernetes
 
+[![Build Status](https://travis-ci.com/geerlingguy/drupal-example-kubernetes.svg?branch=master)](https://travis-ci.com/geerlingguy/drupal-example-kubernetes)
+
 The purpose of this Drupal codebase is to demonstrate a Drupal project and configuration set up for deployment into Kubernetes or an otherwise scalable containerized environment.
 
 The project is used in tandem with the [Raspberry Pi Dramble](http://www.pidramble.com), an open source Kubernetes cluster tailor made for Drupal meant to run on a cluster of Raspberry Pis.
