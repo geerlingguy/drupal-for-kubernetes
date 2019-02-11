@@ -7,12 +7,14 @@ module:
   ckeditor: 0
   contextual: 0
   dblog: 0
+  default_content: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
   field_ui: 0
   file: 0
   filter: 0
+  hal: 0
   image: 0
   inline_form_errors: 0
   link: 0
@@ -21,6 +23,8 @@ module:
   options: 0
   page_cache: 0
   path: 0
+  pidramble_default_content: 0
+  serialization: 0
   system: 0
   text: 0
   toolbar: 0
