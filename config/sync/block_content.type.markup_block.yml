@@ -1,0 +1,8 @@
+uuid: 9a0eeae5-05e1-4151-b184-f996f6d1b479
+langcode: en
+status: true
+dependencies: {  }
+id: markup_block
+label: 'Markup Block'
+revision: 0
+description: 'A block that accepts some markup and displays the markup.'

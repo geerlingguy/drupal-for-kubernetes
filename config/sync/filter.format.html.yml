@@ -4,9 +4,9 @@ status: true
 dependencies:
   module:
     - editor
-name: 'Basic HTML'
+name: 'Full HTML'
 format: html
-weight: -9
+weight: -10
 filters:
   editor_file_reference:
     id: editor_file_reference
@@ -20,7 +20,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <img src alt data-entity-type data-entity-uuid data-align data-caption>'
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <img src alt data-entity-type data-entity-uuid data-align data-caption> <p class="text-align-left text-align-center text-align-right text-align-justify">'
       filter_html_help: true
       filter_html_nofollow: false
   filter_align:

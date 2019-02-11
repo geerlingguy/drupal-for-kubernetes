@@ -3,13 +3,32 @@
  * Presentational styles for Drupal pidramble theme.
  */
 
+/* Basic styles */
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
+  color: inherit;
+}
+
+body {
   color: #000;
 }
 
+a {
+  color: #1976bc;
+  transition: all .2s;
+}
+
+a:visited {
+  color: #081568;
+}
+
+a:hover {
+  color: #083f68;
+}
+
+/* Header and Logo */
 .site-logo {
   float: left;
   margin: 0 1.5em 0 0;
@@ -25,4 +44,85 @@
 .site-name a {
   text-decoration: none;
   color: #000;
+}
+
+/* Main navigation */
+.region-primary-menu nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.region-primary-menu nav li {
+  font-size: 1.2em;
+  border-bottom: 1px solid #888;
+}
+
+.region-primary-menu nav a {
+  text-decoration: none;
+  display: block;
+  transition: all .2s;
+}
+
+.region-primary-menu nav a.is-active {
+  background-color: #1976bc;
+  color: #fff;
+}
+
+.region-primary-menu nav a:hover {
+  background-color: #0a5187;
+  color: #fff;
+}
+
+.region-primary-menu .menu-item {
+  padding-top: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .region-primary-menu nav li {
+    border-bottom: none;
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+  .region-primary-menu nav li a {
+    padding: 10px 25px;
+  }
+}
+
+/* Messages */
+.messages {
+  margin-top: 1em;
+}
+
+/* Page title */
+h1.page-title {
+  margin-top: .15em;
+}
+
+/* Footer */
+.region-footer .block {
+  color: #fff;
+  background-color: #006c12;
+  margin: 1em 0 2em;
+  padding: 2em 8em;
+}
+
+.region-footer .block a {
+  color: #9cd1f9;
+}
+
+.region-footer .block a:hover {
+  color: #fff;
+}
+
+/* Nodes */
+article h2 a {
+  color: #000;
+  text-decoration: none;
+}
+
+article h2 a:hover {
+  color: #083f68;
 }
