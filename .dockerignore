@@ -1,3 +1,4 @@
+# Files.
 .editorconfig
 .env.example
 .gitattributes
@@ -6,4 +7,7 @@
 docker-compose.yml
 phpunit.xml.dist
 README.md
+
+# Directories.
 vendor
+tests
