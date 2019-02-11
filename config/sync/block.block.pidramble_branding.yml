@@ -1,15 +1,15 @@
-uuid: 3ec1b5fe-6b76-4b38-a6f5-7cf5495e375d
+uuid: 2a153a0c-6c8b-45a5-a713-cf56dd51360b
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - stark
+    - pidramble
 _core:
   default_config_hash: fRKXNB91UxDvEMkzCR8ZBsawfC6Fqbme2gtobei3gu4
-id: stark_branding
-theme: stark
+id: pidramble_branding
+theme: pidramble
 region: header
 weight: 0
 provider: null

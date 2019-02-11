@@ -1,0 +1,12 @@
+/**
+ * @file
+ * Presentational styles for Drupal pidramble theme layout.
+ */
+
+.region {
+  clear: both;
+}
+
+.region-primary-menu {
+  padding-top: 1em;
+}

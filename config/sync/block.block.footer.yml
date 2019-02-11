@@ -1,0 +1,25 @@
+uuid: c7fba644-1233-4755-86f9-58c8018c515b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:markup_block:f9150950-fffc-409e-9d6d-76106b3fcce5'
+  module:
+    - block_content
+  theme:
+    - pidramble
+id: footer
+theme: pidramble
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:f9150950-fffc-409e-9d6d-76106b3fcce5'
+settings:
+  id: 'block_content:f9150950-fffc-409e-9d6d-76106b3fcce5'
+  label: Footer
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

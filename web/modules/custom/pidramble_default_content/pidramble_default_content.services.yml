@@ -1,0 +1,5 @@
+services:
+  pidramble_default_content.events_subscriber:
+    class: '\Drupal\pidramble_default_content\EventSubscriber\ImportEventSubscriber'
+    tags:
+      - { name: 'event_subscriber' }

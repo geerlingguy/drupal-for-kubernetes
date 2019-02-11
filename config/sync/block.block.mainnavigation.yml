@@ -1,0 +1,24 @@
+uuid: f490058b-1cd2-4fa2-8109-6c04b162bfc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - pidramble
+id: mainnavigation
+theme: pidramble
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

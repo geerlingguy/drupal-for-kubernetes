@@ -1,0 +1,8 @@
+name: 'Pi Dramble Default Content'
+type: module
+description: 'Default content for Pi Dramble.'
+package: Pi Dramble
+dependencies:
+  - menu_link_content
+  - default_content
+core: '8.x'

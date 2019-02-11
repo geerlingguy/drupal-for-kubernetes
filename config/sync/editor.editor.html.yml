@@ -28,10 +28,20 @@ settings:
             - BulletedList
             - NumberedList
         -
+          name: Justify
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+        -
           name: Media
           items:
             - Blockquote
             - DrupalImage
+        -
+          name: Format
+          items:
+            - Format
         -
           name: Tools
           items:

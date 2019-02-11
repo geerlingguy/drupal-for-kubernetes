@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe27565d1f94de736f8e4fefd7214990",
+    "content-hash": "2bc026d59e54040920592aa9b9d15ce1",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2400,6 +2400,80 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "time": "2019-02-08T12:21:40+00:00"
+        },
+        {
+            "name": "drupal/default_content",
+            "version": "1.0.0-alpha7",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/default_content",
+                "reference": "8.x-1.0-alpha7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/default_content-8.x-1.0-alpha7.zip",
+                "reference": "8.x-1.0-alpha7",
+                "shasum": "4f1b49cdad6d74ef879f4700caaa11703ba85ad7"
+            },
+            "require": {
+                "drupal/core": "~8.3"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha7",
+                    "datestamp": "1508448545",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                },
+                "patches_applied": {
+                    "Run drush commands as user 1 by default": "https://www.drupal.org/files/issues/2018-09-21/account_switcher-2861591-10.patch"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
+                },
+                {
+                    "name": "andypost",
+                    "homepage": "https://www.drupal.org/user/118908"
+                },
+                {
+                    "name": "benjy",
+                    "homepage": "https://www.drupal.org/user/1852732"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "jibran",
+                    "homepage": "https://www.drupal.org/user/1198144"
+                },
+                {
+                    "name": "larowlan",
+                    "homepage": "https://www.drupal.org/user/395439"
+                }
+            ],
+            "description": "Imports default content when a module is enabled",
+            "homepage": "https://www.drupal.org/project/default_content",
+            "support": {
+                "source": "http://cgit.drupalcode.org/default_content"
+            }
         },
         {
             "name": "drush/drush",
@@ -6054,6 +6128,91 @@
             "time": "2018-09-21T14:22:49+00:00"
         },
         {
+            "name": "drupal/devel",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/devel",
+                "reference": "8.x-2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/devel-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "cf5fb816f767f3cac4f2e170ab39e982d5e0698b"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "symfony/var-dumper": "~2.7|^3"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.0",
+                    "datestamp": "1548799380",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Moshe Weitzman",
+                    "homepage": "https://github.com/weitzman",
+                    "email": "weitzman@tejasa.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Hans Salvisberg",
+                    "homepage": "https://www.drupal.org/u/salvis",
+                    "email": "drupal@salvisberg.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Luca Lusso",
+                    "homepage": "https://www.drupal.org/u/lussoluca",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Marco (willzyx)",
+                    "homepage": "https://www.drupal.org/u/willzyx",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "See contributors",
+                    "homepage": "https://www.drupal.org/node/3236/committers"
+                },
+                {
+                    "name": "salvis",
+                    "homepage": "https://www.drupal.org/user/82964"
+                },
+                {
+                    "name": "willzyx",
+                    "homepage": "https://www.drupal.org/user/1043862"
+                }
+            ],
+            "description": "Various blocks, pages, and functions for developers.",
+            "homepage": "http://drupal.org/project/devel",
+            "support": {
+                "source": "http://cgit.drupalcode.org/devel",
+                "issues": "http://drupal.org/project/devel",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
             "name": "fabpot/goutte",
             "version": "v3.2.3",
             "source": {
@@ -7898,7 +8057,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/default_content": 15
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
