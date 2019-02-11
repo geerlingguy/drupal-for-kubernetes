@@ -23,6 +23,7 @@
         "drupal/admin_toolbar": "^1.26",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.6.0",
+        "drupal/default_content": "^1.0@alpha",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
@@ -62,6 +63,12 @@
     },
     "extra": {
         "composer-exit-on-patch-failure": true,
+        "enable-patching": true,
+        "patches": {
+            "drupal/default_content": {
+                "Run drush commands as user 1 by default": "https://www.drupal.org/files/issues/2018-09-21/account_switcher-2861591-10.patch"
+            }
+        },
         "patchLevel": {
             "drupal/core": "-p2"
         },

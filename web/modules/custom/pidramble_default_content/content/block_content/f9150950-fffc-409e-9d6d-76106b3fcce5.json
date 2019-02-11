@@ -1,0 +1,87 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/block\/1?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/block_content\/markup_block"
+        }
+    },
+    "id": [
+        {
+            "value": 1
+        }
+    ],
+    "uuid": [
+        {
+            "value": "f9150950-fffc-409e-9d6d-76106b3fcce5"
+        }
+    ],
+    "revision_id": [
+        {
+            "value": 1
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "markup_block"
+        }
+    ],
+    "revision_created": [
+        {
+            "value": "2019-02-10T23:44:12+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "info": [
+        {
+            "value": "Footer",
+            "lang": "en"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-02-10T23:44:12+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "reusable": [
+        {
+            "value": true
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p class=\"text-align-center\">The Dramble is a cluster of Raspberry Pis powered by Kubernetes, Ansible, and Drupal 8, running in <a href=\"https:\/\/www.jeffgeerling.com\/\">Jeff Geerling<\/a>'s basement.<\/p>\r\n\r\n<p class=\"text-align-center\"><a href=\"https:\/\/github.com\/geerlingguy\/raspberry-pi-dramble\">Get the source code here<\/a>.<\/p>",
+            "format": "html",
+            "processed": "<p class=\"text-align-center\">The Dramble is a cluster of Raspberry Pis powered by Kubernetes, Ansible, and Drupal 8, running in <a href=\"https:\/\/www.jeffgeerling.com\/\">Jeff Geerling<\/a>'s basement.<\/p>\n\n<p class=\"text-align-center\"><a href=\"https:\/\/github.com\/geerlingguy\/raspberry-pi-dramble\">Get the source code here<\/a>.<\/p>",
+            "summary": "",
+            "lang": "en"
+        }
+    ]
+}
