@@ -28,6 +28,13 @@ a:hover {
   color: #083f68;
 }
 
+blockquote {
+  background-color: #effcf1;
+  border-left: 4px solid #006c12;
+  margin: 0;
+  padding: 1px 1em 1px 2em;
+}
+
 /* Tables */
 table {
   min-width: 600px;
