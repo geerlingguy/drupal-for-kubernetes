@@ -40,6 +40,8 @@ After making any configuration changes on the website, you can export the config
 
     docker-compose exec drupal bash -c 'vendor/bin/drush config:export -y'
 
+For more on the way this project's configuration changes are handled, and the general site development process, see the [project documentation](docs/README.md).
+
 ## License
 
 MIT license.
