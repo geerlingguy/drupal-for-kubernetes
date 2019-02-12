@@ -1,0 +1,157 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/wiki\/hardware\/pis?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/page"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/2?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "href": "http:\/\/default\/user\/2?_format=hal_json",
+                "lang": "en"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 8
+        }
+    ],
+    "uuid": [
+        {
+            "value": "86028281-0e1a-430f-bb73-ba022beb2ea8"
+        }
+    ],
+    "vid": [
+        {
+            "value": 8
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2019-02-12T04:31:42+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/2?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "72a32381-22fe-4944-ab85-0b45a51f8631"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/2?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "72a32381-22fe-4944-ab85-0b45a51f8631"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "Raspberry Pis and Accessories",
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2016-02-06T04:31:14+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-02-12T04:31:42+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/wiki\/hardware\/pis",
+            "pid": 8,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>The following is a list of all the essential components of the Dramble, along with some links to the places where I purchased them:<\/p>\r\n\r\n<table>\r\n\t<thead>\r\n\t\t<tr>\r\n\t\t\t<th>Item<\/th>\r\n\t\t\t<th>Qty.<\/th>\r\n\t\t\t<th>Price<\/th>\r\n\t\t\t<th>Purpose<\/th>\r\n\t\t<\/tr>\r\n\t<\/thead>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td><a href=\"https:\/\/www.amazon.com\/ELEMENT-Element14-Raspberry-Pi-Motherboard\/dp\/B07BDR5PDW\/ref=as_li_ss_tl?ie=UTF8&amp;qid=1535056748&amp;sr=8-3&amp;keywords=raspberry+pi+model+3+b+&amp;dpID=41bqUv%252BKc8L&amp;preST=_SX300_QL70_&amp;dpSrc=srch&amp;linkCode=ll1&amp;tag=mmjjg-20&amp;linkId=3d65209ef5536c00fe56c36cbc844392&amp;language=en_US\">Raspberry Pi 3 Model B+<\/a><\/td>\r\n\t\t\t<td>5<\/td>\r\n\t\t\t<td>$34.99<\/td>\r\n\t\t\t<td>To run Drupal.<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td><a href=\"https:\/\/www.amazon.com\/Poweradd-Family-Sized-Multi-Port-Desktop-Smartphones\/dp\/B00KHP6UVQ\/ref=as_li_ss_tl?ie=UTF8&amp;redirect=true&amp;ref_=as_li_tl&amp;linkCode=ll1&amp;tag=mmjjg-20&amp;linkId=e80708b1638089b2e6e582eb73a729cf\">50W 6-port USB desktop charger<\/a><\/td>\r\n\t\t\t<td>1<\/td>\r\n\t\t\t<td>$19.99<\/td>\r\n\t\t\t<td>Provide adequate power for the Dramble.<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td><a href=\"https:\/\/www.amazon.com\/Anker-Premium-Android-Samsung-Motorola\/dp\/B00N8VHW72\/ref=as_li_ss_tl?ie=UTF8&amp;redirect=true&amp;ref_=as_li_tl&amp;linkCode=ll1&amp;tag=mmjjg-20&amp;linkId=8f75cf4ca2c2117ca93fa04b973e51fb\">6-pack micro USB cables<\/a><\/td>\r\n\t\t\t<td>1<\/td>\r\n\t\t\t<td>$9.99<\/td>\r\n\t\t\t<td>Connect the charger to the Pis.<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td><a href=\"https:\/\/www.amazon.com\/Samsung-Class-Micro-Adapter-MB-MC32DA\/dp\/B00WR4IJBE\/ref=as_li_ss_tl?s=pc&amp;ie=UTF8&amp;qid=1467833025&amp;sr=1-3&amp;keywords=samsung+evo+microsd&amp;linkCode=ll1&amp;tag=mmjjg-20&amp;linkId=93773bda6727ae51b4d9f379a8c2a8d2\">Samsung EVO+ 32GB microSD card<\/a><\/td>\r\n\t\t\t<td>5<\/td>\r\n\t\t\t<td>$16.91<\/td>\r\n\t\t\t<td>Storage for each Pi.<sup>1<\/sup><\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td><a href=\"https:\/\/www.amazon.com\/TRENDnet-Unmanaged-Gigabit-GREENnet-TEG-S80g\/dp\/B001QUA6RA\/ref=as_li_ss_tl?ie=UTF8&amp;redirect=true&amp;ref_=as_li_tl&amp;linkCode=ll1&amp;tag=mmjjg-20&amp;linkId=ada73855f40d46033ff4a71f414d3074\">8-port unmanaged Gigabit network switch<\/a><\/td>\r\n\t\t\t<td>1<\/td>\r\n\t\t\t<td>$29.99<\/td>\r\n\t\t\t<td>To build a high-speed private network.<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td><a href=\"http:\/\/www.ebay.com\/itm\/271648357906\">Raspberry Pi B+ Stackable Case Triplestack<\/a><\/td>\r\n\t\t\t<td>1<\/td>\r\n\t\t\t<td>$24.50<\/td>\r\n\t\t\t<td>To hold the Pis.<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td><a href=\"http:\/\/www.ebay.com\/itm\/271614825269\">Raspberry Pi B+ Case, Stackable - Additional Level<\/a><\/td>\r\n\t\t\t<td>2<\/td>\r\n\t\t\t<td>$5.50<\/td>\r\n\t\t\t<td>To hold the Pis.<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td><a href=\"http:\/\/www.mcmelectronics.com\/product\/22-24145\">14\" Black Tactical Weatherproof Case<\/a><\/td>\r\n\t\t\t<td>1<\/td>\r\n\t\t\t<td>$24.99<\/td>\r\n\t\t\t<td>To make the entire setup transportable.<\/td>\r\n\t\t<\/tr>\r\n\t\t<tr>\r\n\t\t\t<td><strong>TOTAL<\/strong><\/td>\r\n\t\t\t<td>=<\/td>\r\n\t\t\t<td><strong>$379.96<\/strong><\/td>\r\n\t\t\t<td>&nbsp;<\/td>\r\n\t\t<\/tr>\r\n\t<\/tbody>\r\n<\/table>\r\n\r\n<p><sup>1<\/sup> Why use a more expensive card like the Samsung EVO+&nbsp;when any old microSD card would suffice? Well, the microSD card you use can have a <em>huge<\/em> impact on the overall performance of the cluster\u2014especially for applications that need fast small-file random write performance, like MySQL! Read&nbsp;<a href=\"\/wiki\/benchmarks\/microsd-cards\">microSD Card Benchmarks<\/a> page for more.<\/p>\r\n",
+            "format": "html",
+            "processed": "<p>The following is a list of all the essential components of the Dramble, along with some links to the places where I purchased them:<\/p>\n\n<table><thead><tr><th>Item<\/th>\n\t\t\t<th>Qty.<\/th>\n\t\t\t<th>Price<\/th>\n\t\t\t<th>Purpose<\/th>\n\t\t<\/tr><\/thead><tbody><tr><td><a href=\"https:\/\/www.amazon.com\/ELEMENT-Element14-Raspberry-Pi-Motherboard\/dp\/B07BDR5PDW\/ref=as_li_ss_tl?ie=UTF8&amp;qid=1535056748&amp;sr=8-3&amp;keywords=raspberry+pi+model+3+b+&amp;dpID=41bqUv%252BKc8L&amp;preST=_SX300_QL70_&amp;dpSrc=srch&amp;linkCode=ll1&amp;tag=mmjjg-20&amp;linkId=3d65209ef5536c00fe56c36cbc844392&amp;language=en_US\">Raspberry Pi 3 Model B+<\/a><\/td>\n\t\t\t<td>5<\/td>\n\t\t\t<td>$34.99<\/td>\n\t\t\t<td>To run Drupal.<\/td>\n\t\t<\/tr><tr><td><a href=\"https:\/\/www.amazon.com\/Poweradd-Family-Sized-Multi-Port-Desktop-Smartphones\/dp\/B00KHP6UVQ\/ref=as_li_ss_tl?ie=UTF8&amp;redirect=true&amp;ref_=as_li_tl&amp;linkCode=ll1&amp;tag=mmjjg-20&amp;linkId=e80708b1638089b2e6e582eb73a729cf\">50W 6-port USB desktop charger<\/a><\/td>\n\t\t\t<td>1<\/td>\n\t\t\t<td>$19.99<\/td>\n\t\t\t<td>Provide adequate power for the Dramble.<\/td>\n\t\t<\/tr><tr><td><a href=\"https:\/\/www.amazon.com\/Anker-Premium-Android-Samsung-Motorola\/dp\/B00N8VHW72\/ref=as_li_ss_tl?ie=UTF8&amp;redirect=true&amp;ref_=as_li_tl&amp;linkCode=ll1&amp;tag=mmjjg-20&amp;linkId=8f75cf4ca2c2117ca93fa04b973e51fb\">6-pack micro USB cables<\/a><\/td>\n\t\t\t<td>1<\/td>\n\t\t\t<td>$9.99<\/td>\n\t\t\t<td>Connect the charger to the Pis.<\/td>\n\t\t<\/tr><tr><td><a href=\"https:\/\/www.amazon.com\/Samsung-Class-Micro-Adapter-MB-MC32DA\/dp\/B00WR4IJBE\/ref=as_li_ss_tl?s=pc&amp;ie=UTF8&amp;qid=1467833025&amp;sr=1-3&amp;keywords=samsung+evo+microsd&amp;linkCode=ll1&amp;tag=mmjjg-20&amp;linkId=93773bda6727ae51b4d9f379a8c2a8d2\">Samsung EVO+ 32GB microSD card<\/a><\/td>\n\t\t\t<td>5<\/td>\n\t\t\t<td>$16.91<\/td>\n\t\t\t<td>Storage for each Pi.<sup>1<\/sup><\/td>\n\t\t<\/tr><tr><td><a href=\"https:\/\/www.amazon.com\/TRENDnet-Unmanaged-Gigabit-GREENnet-TEG-S80g\/dp\/B001QUA6RA\/ref=as_li_ss_tl?ie=UTF8&amp;redirect=true&amp;ref_=as_li_tl&amp;linkCode=ll1&amp;tag=mmjjg-20&amp;linkId=ada73855f40d46033ff4a71f414d3074\">8-port unmanaged Gigabit network switch<\/a><\/td>\n\t\t\t<td>1<\/td>\n\t\t\t<td>$29.99<\/td>\n\t\t\t<td>To build a high-speed private network.<\/td>\n\t\t<\/tr><tr><td><a href=\"http:\/\/www.ebay.com\/itm\/271648357906\">Raspberry Pi B+ Stackable Case Triplestack<\/a><\/td>\n\t\t\t<td>1<\/td>\n\t\t\t<td>$24.50<\/td>\n\t\t\t<td>To hold the Pis.<\/td>\n\t\t<\/tr><tr><td><a href=\"http:\/\/www.ebay.com\/itm\/271614825269\">Raspberry Pi B+ Case, Stackable - Additional Level<\/a><\/td>\n\t\t\t<td>2<\/td>\n\t\t\t<td>$5.50<\/td>\n\t\t\t<td>To hold the Pis.<\/td>\n\t\t<\/tr><tr><td><a href=\"http:\/\/www.mcmelectronics.com\/product\/22-24145\">14\" Black Tactical Weatherproof Case<\/a><\/td>\n\t\t\t<td>1<\/td>\n\t\t\t<td>$24.99<\/td>\n\t\t\t<td>To make the entire setup transportable.<\/td>\n\t\t<\/tr><tr><td><strong>TOTAL<\/strong><\/td>\n\t\t\t<td>=<\/td>\n\t\t\t<td><strong>$379.96<\/strong><\/td>\n\t\t\t<td>\u00a0<\/td>\n\t\t<\/tr><\/tbody><\/table><p><sup>1<\/sup> Why use a more expensive card like the Samsung EVO+\u00a0when any old microSD card would suffice? Well, the microSD card you use can have a <em>huge<\/em> impact on the overall performance of the cluster\u2014especially for applications that need fast small-file random write performance, like MySQL! Read\u00a0<a href=\"\/wiki\/benchmarks\/microsd-cards\">microSD Card Benchmarks<\/a> page for more.<\/p>\n",
+            "summary": "",
+            "lang": "en"
+        }
+    ]
+}

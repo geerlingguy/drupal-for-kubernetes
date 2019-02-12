@@ -1,0 +1,157 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/wiki\/hardware\/extras?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/page"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/2?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "href": "http:\/\/default\/user\/2?_format=hal_json",
+                "lang": "en"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 11
+        }
+    ],
+    "uuid": [
+        {
+            "value": "c160677d-6171-4e72-87b2-f95c71fe4468"
+        }
+    ],
+    "vid": [
+        {
+            "value": 11
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2019-02-12T04:35:26+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/2?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "72a32381-22fe-4944-ab85-0b45a51f8631"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/2?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "72a32381-22fe-4944-ab85-0b45a51f8631"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "Recommended Extras",
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2016-02-06T04:27:28+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-02-12T04:35:26+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/wiki\/hardware\/extras",
+            "pid": 11,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Other accessories, optional but helpful for general Pi development:<\/p>\r\n\r\n<ul>\r\n\t<li><a href=\"http:\/\/www.amazon.com\/gp\/product\/B003MTTJOY\/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B003MTTJOY&amp;linkCode=as2&amp;tag=mmjjg-20&amp;linkId=WCTEZWNBLNNQ35E5\">802.11b\/g\/n USB WiFi adapter<\/a> (I have a few; handy for getting online away from wired jack\u2014only if you're using an older Pi model without built-in WiFi)<\/li>\r\n\t<li><a href=\"http:\/\/www.amazon.com\/gp\/product\/B006S21SAK\/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B006S21SAK&amp;linkCode=as2&amp;tag=mmjjg-20&amp;linkId=2D7X6HRTJFTESGT2\">5mm Diffused RGB LEDs<\/a> (great for showing status!)<\/li>\r\n\t<li><a href=\"http:\/\/www.amazon.com\/gp\/product\/B00Q1T07O8\/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00Q1T07O8&amp;linkCode=as2&amp;tag=mmjjg-20&amp;linkId=JG3OGOMBG75D6BFY\">Assembled RPi GPIO Cobbler with 40-pin cable<\/a> (helpful for prototyping)<\/li>\r\n\t<li>Half-size breadboard<\/li>\r\n\t<li>Breadboard\/prototyping jumper cables<\/li>\r\n<\/ul>\r\n",
+            "format": "html",
+            "processed": "<p>Other accessories, optional but helpful for general Pi development:<\/p>\n\n<ul><li><a href=\"http:\/\/www.amazon.com\/gp\/product\/B003MTTJOY\/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B003MTTJOY&amp;linkCode=as2&amp;tag=mmjjg-20&amp;linkId=WCTEZWNBLNNQ35E5\">802.11b\/g\/n USB WiFi adapter<\/a> (I have a few; handy for getting online away from wired jack\u2014only if you're using an older Pi model without built-in WiFi)<\/li>\n\t<li><a href=\"http:\/\/www.amazon.com\/gp\/product\/B006S21SAK\/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B006S21SAK&amp;linkCode=as2&amp;tag=mmjjg-20&amp;linkId=2D7X6HRTJFTESGT2\">5mm Diffused RGB LEDs<\/a> (great for showing status!)<\/li>\n\t<li><a href=\"http:\/\/www.amazon.com\/gp\/product\/B00Q1T07O8\/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00Q1T07O8&amp;linkCode=as2&amp;tag=mmjjg-20&amp;linkId=JG3OGOMBG75D6BFY\">Assembled RPi GPIO Cobbler with 40-pin cable<\/a> (helpful for prototyping)<\/li>\n\t<li>Half-size breadboard<\/li>\n\t<li>Breadboard\/prototyping jumper cables<\/li>\n<\/ul>",
+            "summary": "",
+            "lang": "en"
+        }
+    ]
+}
