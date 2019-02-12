@@ -28,6 +28,33 @@ a:hover {
   color: #083f68;
 }
 
+/* Tables */
+table {
+  min-width: 600px;
+  width: 100%;
+}
+
+table th,
+table td {
+  padding: .5em .75em;
+}
+
+table thead th {
+  background-color: #006c12;
+  color: #fff;
+  border-color: #006c12;
+  text-align: left;
+}
+
+table td {
+  border-bottom: 1px solid #ccc;
+  transition: all .2s;
+}
+
+table tr:hover td {
+  background-color: #eee;
+}
+
 /* Header and Logo */
 .site-logo {
   float: left;
