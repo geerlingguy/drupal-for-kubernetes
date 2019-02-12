@@ -17,6 +17,9 @@ settings:
           items:
             - Bold
             - Italic
+            - Underline
+            - Superscript
+            - Subscript
         -
           name: Links
           items:
@@ -42,6 +45,7 @@ settings:
           name: Format
           items:
             - Format
+            - Table
         -
           name: Tools
           items:
