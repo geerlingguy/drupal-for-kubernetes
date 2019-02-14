@@ -32,11 +32,8 @@ class ImportEventSubscriber implements EventSubscriberInterface {
   public function onDefaultContentImport(ImportEvent $event) {
     $entities = $event->getImportedEntities();
 
-    // Create main menu links after default content import is complete.
+    // Create main and wiki menu links after default content import is complete.
     $this->createMainMenuLinks();
-
-    // Create wiki menu and menu links after default content import is complete.
-    $this->createWikiMenu();
     $this->createWikiMenuLinks();
   }
 
@@ -75,26 +72,6 @@ class ImportEventSubscriber implements EventSubscriberInterface {
       ]);
       $menu_link->save();
     }
-  }
-
-  /**
-   * Create Wiki menu (needed until default_content can export them).
-   *
-   * @see https://www.drupal.org/project/default_content/issues/2885285
-   * @see https://www.drupal.org/project/drupal/issues/2577923
-   */
-  private function createWikiMenu() {
-    // Yeah, I should inject my dependencies. Sue me.
-    \Drupal::entityTypeManager()
-      ->getStorage('menu')
-      ->create([
-        'id' => 'wiki',
-        'label' => 'Wiki',
-        'description' => 'Wiki links.',
-      ])
-      ->save();
-    \Drupal::service("router.builder")
-      ->rebuild();
   }
 
   /**
