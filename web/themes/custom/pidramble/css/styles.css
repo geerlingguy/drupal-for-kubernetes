@@ -28,6 +28,10 @@ a:hover {
   color: #083f68;
 }
 
+p {
+  font-size: 1.05rem;
+}
+
 blockquote {
   background-color: #effcf1;
   border-left: 4px solid #006c12;
@@ -159,4 +163,21 @@ article h2 a {
 
 article h2 a:hover {
   color: #083f68;
+}
+
+article li {
+  padding-bottom: 1em;
+}
+
+/* Wiki Menu */
+.menu--wiki {
+  font-size: .8em;
+}
+
+.menu--wiki h2 {
+  margin: .25em 0;
+}
+
+.menu--wiki ul.menu {
+  list-style-type: disc;
 }

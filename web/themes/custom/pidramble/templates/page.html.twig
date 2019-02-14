@@ -64,20 +64,40 @@
     <main role="main">
       <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-      <div class="layout-content">
-        {{ page.content }}
-      </div>{# /.layout-content #}
-
-      {% if page.sidebar_first %}
-        <aside class="layout-sidebar-first" role="complementary">
-          {{ page.sidebar_first }}
-        </aside>
-      {% endif %}
-
-      {% if page.sidebar_second %}
-        <aside class="layout-sidebar-second" role="complementary">
-          {{ page.sidebar_second }}
-        </aside>
+      {% if page.sidebar_second and not page.sidebar_first %}
+        <div class="row">
+          <div class="col-8 layout-content">
+            {{ page.content }}
+          </div>{# /.layout-content #}
+          <aside class="col-4 layout-sidebar-second" role="complementary">
+            {{ page.sidebar_second }}
+          </aside>
+        </div>
+      {% elseif page.sidebar_first and not page.sidebar_second %}
+        <div class="row">
+          <aside class="col-4 layout-sidebar-first" role="complementary">
+            {{ page.sidebar_first }}
+          </aside>
+          <div class="col-8 layout-content">
+            {{ page.content }}
+          </div>{# /.layout-content #}
+        </div>
+      {% elseif page.sidebar_first and page.sidebar_second %}
+        <div class="row">
+          <aside class="col-3 layout-sidebar-first" role="complementary">
+            {{ page.sidebar_first }}
+          </aside>
+          <div class="col-6 layout-content">
+            {{ page.content }}
+          </div>{# /.layout-content #}
+          <aside class="col-3 layout-sidebar-second" role="complementary">
+            {{ page.sidebar_second }}
+          </aside>
+        </div>
+      {% else %}
+        <div class="layout-content">
+          {{ page.content }}
+        </div>{# /.layout-content #}
       {% endif %}
 
     </main>
