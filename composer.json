@@ -32,6 +32,7 @@
     },
     "require-dev": {
         "drupal/devel": "^2.0",
+        "drupal/devel_php": "^1.0",
         "webflo/drupal-core-require-dev": "^8.6.0"
     },
     "conflict": {
