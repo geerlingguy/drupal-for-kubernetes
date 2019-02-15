@@ -169,6 +169,10 @@ article li {
   padding-bottom: 1em;
 }
 
+.node__links ul.links li:first-child {
+  padding-left: 0;
+}
+
 /* Wiki Menu */
 .menu--wiki {
   font-size: .8em;
