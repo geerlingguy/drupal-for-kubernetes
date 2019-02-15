@@ -1,0 +1,157 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/wiki\/setup\/mysql-failover?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/page"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/2?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "href": "http:\/\/default\/user\/2?_format=hal_json",
+                "lang": "en"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 20
+        }
+    ],
+    "uuid": [
+        {
+            "value": "9eab7cb8-977c-43fc-bc74-241ee680cc2b"
+        }
+    ],
+    "vid": [
+        {
+            "value": 20
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2019-02-12T04:42:06+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/2?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "72a32381-22fe-4944-ab85-0b45a51f8631"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/2?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "72a32381-22fe-4944-ab85-0b45a51f8631"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "Fail over the MySQL database",
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2016-05-25T03:40:14+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-02-12T04:42:06+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/wiki\/setup\/mysql-failover",
+            "pid": 20,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p><strong>NOTE<\/strong>: This documentation is currently outdated for the Kubernetes-based Dramble revision. Please follow the GitHub issue <a href=\"https:\/\/github.com\/geerlingguy\/raspberry-pi-dramble\/issues\/109\">Don't Make MySQL a Pet<\/a> to follow progress in making a more robust HA version of Drupal's Database running inside the Dramble Kubernetes cluster.<\/p>\r\n\r\n<p>One of the main reasons behind using a high availability architecture like the one used with the Dramble is the redundancy on the database server. Using a master-replica or master-master setup allows you to switch over to the secondary server quickly in case of a major issue on the primary database server.<\/p>\r\n\r\n<p>The Pi Dramble project includes a playbook that automatically switches all the required settings to the replica server, and makes sure the replica resets itself as the new 'master' server.<\/p>\r\n\r\n<p>To run this playbook (after you've deployed Drupal to the cluster), you can run the command:<\/p>\r\n\r\n<p><code>$ ansible-playbook -i inventory playbooks\/drupal\/mysql-failover.yml<\/code><\/p>\r\n\r\n<p>The failover playbook sets the replica server as the new master, then switches Drupal's settings.php file to point to this new master.<\/p>\r\n\r\n<p>To switch back to the original layout, you can do the following:<\/p>\r\n\r\n<ol>\r\n\t<li>Run the main playbook:<br \/>\r\n\t<code>ansible-playbook -i inventory main.yml<\/code><\/li>\r\n\t<li>Run the Drupal deployment playbook:<br \/>\r\n\t<code>ansible-playbook -i inventory playbooks\/drupal\/main.yml<\/code><\/li>\r\n<\/ol>\r\n",
+            "format": "html",
+            "processed": "<p><strong>NOTE<\/strong>: This documentation is currently outdated for the Kubernetes-based Dramble revision. Please follow the GitHub issue <a href=\"https:\/\/github.com\/geerlingguy\/raspberry-pi-dramble\/issues\/109\">Don't Make MySQL a Pet<\/a> to follow progress in making a more robust HA version of Drupal's Database running inside the Dramble Kubernetes cluster.<\/p>\n\n<p>One of the main reasons behind using a high availability architecture like the one used with the Dramble is the redundancy on the database server. Using a master-replica or master-master setup allows you to switch over to the secondary server quickly in case of a major issue on the primary database server.<\/p>\n\n<p>The Pi Dramble project includes a playbook that automatically switches all the required settings to the replica server, and makes sure the replica resets itself as the new 'master' server.<\/p>\n\n<p>To run this playbook (after you've deployed Drupal to the cluster), you can run the command:<\/p>\n\n<p><code>$ ansible-playbook -i inventory playbooks\/drupal\/mysql-failover.yml<\/code><\/p>\n\n<p>The failover playbook sets the replica server as the new master, then switches Drupal's settings.php file to point to this new master.<\/p>\n\n<p>To switch back to the original layout, you can do the following:<\/p>\n\n<ol><li>Run the main playbook:<br \/><code>ansible-playbook -i inventory main.yml<\/code><\/li>\n\t<li>Run the Drupal deployment playbook:<br \/><code>ansible-playbook -i inventory playbooks\/drupal\/main.yml<\/code><\/li>\n<\/ol>",
+            "summary": "",
+            "lang": "en"
+        }
+    ]
+}

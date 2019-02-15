@@ -1,0 +1,8 @@
+uuid: b3945cfb-ee1d-43fb-a1c8-87704749d54e
+langcode: en
+status: true
+dependencies: {  }
+id: wiki
+label: Wiki
+description: 'Wiki links.'
+locked: false

@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * @file
+ * Install and uninstall hooks for pidramble_default_content.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function pidramble_default_content_uninstall() {
+  // Delete links created in ImportEventSubscriber::createMainMenuLinks().
+  $menu_links = \Drupal::entityManager()
+    ->getStorage('menu_link_content')
+    ->loadByProperties(['menu_name' => 'main']);
+  foreach ($menu_links as $link) {
+    $menu_link = \Drupal::service('entity.repository')
+      ->loadEntityByUuid('menu_link_content', $link->uuid())
+      ->delete();
+  }
+
+  // Delete wiki menu.
+  \Drupal::entityTypeManager()
+    ->getStorage('menu')
+    ->load('wiki')
+    ->delete();
+
+  // Delete all content by UUID in the `content` directory.
+  $module_path = \Drupal::service('module_handler')
+    ->getModule('pidramble_default_content')
+    ->getPath();
+  $content_dir_path = $module_path . '/content';
+  $files = file_scan_directory($content_dir_path, '/.*.json$/i');
+  foreach ($files as $file) {
+    // Get UUID.
+    $uuid = $file->name;
+
+    // Get Entity type ID.
+    $entity_type = str_replace($content_dir_path . '/', '', $file->uri);
+    $entity_type = str_replace('/' . $file->filename, '', $entity_type);
+
+    // Delete the content.
+    $entity = \Drupal::service('entity.repository')
+      ->loadEntityByUuid($entity_type, $uuid)
+      ->delete();
+  }
+}

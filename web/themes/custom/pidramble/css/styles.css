@@ -21,11 +21,49 @@ a {
 }
 
 a:visited {
-  color: #081568;
+  color: #3a599b;
 }
 
 a:hover {
   color: #083f68;
+}
+
+p {
+  font-size: 1.05rem;
+}
+
+blockquote {
+  background-color: #effcf1;
+  border-left: 4px solid #006c12;
+  margin: 0;
+  padding: 1px 1em 1px 2em;
+}
+
+/* Tables */
+table {
+  min-width: 600px;
+  width: 100%;
+}
+
+table th,
+table td {
+  padding: .5em .75em;
+}
+
+table thead th {
+  background-color: #006c12;
+  color: #fff;
+  border-color: #006c12;
+  text-align: left;
+}
+
+table td {
+  border-bottom: 1px solid #ccc;
+  transition: all .2s;
+}
+
+table tr:hover td {
+  background-color: #eee;
 }
 
 /* Header and Logo */
@@ -125,4 +163,21 @@ article h2 a {
 
 article h2 a:hover {
   color: #083f68;
+}
+
+article li {
+  padding-bottom: 1em;
+}
+
+/* Wiki Menu */
+.menu--wiki {
+  font-size: .8em;
+}
+
+.menu--wiki h2 {
+  margin: .25em 0;
+}
+
+.menu--wiki ul.menu {
+  list-style-type: disc;
 }

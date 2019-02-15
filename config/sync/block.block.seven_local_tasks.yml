@@ -8,15 +8,15 @@ _core:
   default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
 id: seven_local_tasks
 theme: seven
-region: content
-weight: -20
+region: header
+weight: -2
 provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: Tabs
+  label: 'Primary Tabs'
   provider: core
   label_display: '0'
   primary: true
-  secondary: true
+  secondary: false
 visibility: {  }

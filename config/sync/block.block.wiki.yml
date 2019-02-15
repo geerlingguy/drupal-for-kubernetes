@@ -1,0 +1,29 @@
+uuid: 1b72d2fb-8f98-4009-9f37-d1c0127f06de
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.wiki
+  module:
+    - system
+  theme:
+    - pidramble
+id: wiki
+theme: pidramble
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:wiki'
+settings:
+  id: 'system_menu_block:wiki'
+  label: 'Wiki Menu'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: '/wiki*'
+    negate: false
+    context_mapping: {  }

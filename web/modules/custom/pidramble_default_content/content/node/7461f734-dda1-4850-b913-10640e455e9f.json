@@ -1,0 +1,157 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/wiki\/setup\/rack?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/page"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/2?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "href": "http:\/\/default\/user\/2?_format=hal_json",
+                "lang": "en"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 15
+        }
+    ],
+    "uuid": [
+        {
+            "value": "7461f734-dda1-4850-b913-10640e455e9f"
+        }
+    ],
+    "vid": [
+        {
+            "value": 15
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2019-02-12T04:38:16+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/2?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "72a32381-22fe-4944-ab85-0b45a51f8631"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/2?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "72a32381-22fe-4944-ab85-0b45a51f8631"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "Rack the Raspberry Pis",
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2016-02-06T04:36:28+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-02-12T04:38:16+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/wiki\/setup\/rack",
+            "pid": 15,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Once you have your Pis unpackaged and have installed microSD cards in them, you\u2019re ready to rack them up and get them networked and booted.<\/p>\r\n\r\n<ol>\r\n\t<li>Mount one Pi per tier of the stackable case.<\/li>\r\n\t<li>Mount the stack to a board, and mount the network switch and USB power supply as well.<\/li>\r\n\t<li>Plug each Pi into one of the power supply\u2019s jacks, ensuring any Pis that will be powering extra USB devices (e.g. the database server) is plugged into a 2A port.<\/li>\r\n\t<li>Create custom-sized Cat 5e\/Cat 6 cables, one-per-Pi, to connect to the network switch. (<a href=\"http:\/\/www.groundcontrol.com\/galileo\/ch5-ethernet.htm\">Here\u2019s a decent guide for the process<\/a>).<\/li>\r\n\t<li>Run power to the switch and to the USB power supply.<\/li>\r\n\t<li>Once the Pis are powered, they should all boot up!<\/li>\r\n<\/ol>\r\n",
+            "format": "html",
+            "processed": "<p>Once you have your Pis unpackaged and have installed microSD cards in them, you\u2019re ready to rack them up and get them networked and booted.<\/p>\n\n<ol><li>Mount one Pi per tier of the stackable case.<\/li>\n\t<li>Mount the stack to a board, and mount the network switch and USB power supply as well.<\/li>\n\t<li>Plug each Pi into one of the power supply\u2019s jacks, ensuring any Pis that will be powering extra USB devices (e.g. the database server) is plugged into a 2A port.<\/li>\n\t<li>Create custom-sized Cat 5e\/Cat 6 cables, one-per-Pi, to connect to the network switch. (<a href=\"http:\/\/www.groundcontrol.com\/galileo\/ch5-ethernet.htm\">Here\u2019s a decent guide for the process<\/a>).<\/li>\n\t<li>Run power to the switch and to the USB power supply.<\/li>\n\t<li>Once the Pis are powered, they should all boot up!<\/li>\n<\/ol>",
+            "summary": "",
+            "lang": "en"
+        }
+    ]
+}

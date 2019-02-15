@@ -1,0 +1,157 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/wiki\/setup\/test-ansible?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/page"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/2?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "href": "http:\/\/default\/user\/2?_format=hal_json",
+                "lang": "en"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 17
+        }
+    ],
+    "uuid": [
+        {
+            "value": "752e1ecf-7568-41bb-91b6-264f7c82c594"
+        }
+    ],
+    "vid": [
+        {
+            "value": 17
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2019-02-12T04:39:50+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/2?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "72a32381-22fe-4944-ab85-0b45a51f8631"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/2?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "72a32381-22fe-4944-ab85-0b45a51f8631"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "Test Ansible configuration",
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2016-02-06T04:36:28+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-02-12T04:39:50+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/wiki\/setup\/test-ansible",
+            "pid": 17,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Once you have all your Pis booted and networked with the correct IP addresses, and the <code>inventory<\/code> file alongside <code>main.yml<\/code> has all the right IP addresses, you can run the following command (within the same directory as <code>main.yml<\/code>\u2014the root directory of this project) to test Ansible\u2019s ability to see all the Pis:<\/p>\r\n\r\n<pre>\r\n<code>$ ansible all -i inventory -m ping\r\n<\/code><\/pre>\r\n\r\n<p>This should return something like:<\/p>\r\n\r\n<pre>\r\n<code>$ ansible all -i inventory -m ping\r\n10.0.1.61 | success &gt;&gt; {\r\n    \"changed\": false,\r\n    \"ping\": \"pong\"\r\n}\r\n\r\n...\r\n\r\n10.0.1.65 | success &gt;&gt; {\r\n    \"changed\": false,\r\n    \"ping\": \"pong\"\r\n}\r\n<\/code><\/pre>\r\n\r\n<p>If you get a <code>pong<\/code> for each Pi, you\u2019re good to go!<\/p>\r\n\r\n<blockquote>You can also connect using an SSH&nbsp;password by adding the -k option to any command, but you should <a href=\"https:\/\/www.digitalocean.com\/community\/tutorials\/how-to-set-up-ssh-keys--2\">connect with an SSH key<\/a> for best results.<\/blockquote>\r\n\r\n<p>Some other interesting Ansible commands you could run to manage your Pis:<\/p>\r\n\r\n<pre>\r\n<code># Get current disk usage.\r\n$ ansible all -i inventory -a \"df -h\"\r\n\r\n# Get current memory usage.\r\n$ ansible all -i inventory -a \"free -m\"\r\n\r\n# Reboot all the Pis.\r\n$ ansible all -i inventory -m shell -a \"sleep 1s; shutdown -r now\" -b -B 60 -P 0\r\n\r\n# Shut down all the Pis.\r\n$ ansible all -i inventory -m shell -a \"sleep 1s; shutdown -h now\" -b -B 60 -P 0\r\n<\/code><\/pre>\r\n",
+            "format": "html",
+            "processed": "<p>Once you have all your Pis booted and networked with the correct IP addresses, and the <code>inventory<\/code> file alongside <code>main.yml<\/code> has all the right IP addresses, you can run the following command (within the same directory as <code>main.yml<\/code>\u2014the root directory of this project) to test Ansible\u2019s ability to see all the Pis:<\/p>\n\n<pre>\n<code>$ ansible all -i inventory -m ping\n<\/code><\/pre>\n\n<p>This should return something like:<\/p>\n\n<pre>\n<code>$ ansible all -i inventory -m ping\n10.0.1.61 | success &gt;&gt; {\n    \"changed\": false,\n    \"ping\": \"pong\"\n}\n\n...\n\n10.0.1.65 | success &gt;&gt; {\n    \"changed\": false,\n    \"ping\": \"pong\"\n}\n<\/code><\/pre>\n\n<p>If you get a <code>pong<\/code> for each Pi, you\u2019re good to go!<\/p>\n\n<blockquote>You can also connect using an SSH\u00a0password by adding the -k option to any command, but you should <a href=\"https:\/\/www.digitalocean.com\/community\/tutorials\/how-to-set-up-ssh-keys--2\">connect with an SSH key<\/a> for best results.<\/blockquote>\n\n<p>Some other interesting Ansible commands you could run to manage your Pis:<\/p>\n\n<pre>\n<code># Get current disk usage.\n$ ansible all -i inventory -a \"df -h\"\n\n# Get current memory usage.\n$ ansible all -i inventory -a \"free -m\"\n\n# Reboot all the Pis.\n$ ansible all -i inventory -m shell -a \"sleep 1s; shutdown -r now\" -b -B 60 -P 0\n\n# Shut down all the Pis.\n$ ansible all -i inventory -m shell -a \"sleep 1s; shutdown -h now\" -b -B 60 -P 0\n<\/code><\/pre>\n",
+            "summary": "",
+            "lang": "en"
+        }
+    ]
+}

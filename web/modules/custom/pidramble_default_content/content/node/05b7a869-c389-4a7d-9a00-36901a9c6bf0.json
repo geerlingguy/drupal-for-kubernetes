@@ -1,0 +1,157 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/wiki\/hardware\/tips?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/page"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/2?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "href": "http:\/\/default\/user\/2?_format=hal_json",
+                "lang": "en"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 12
+        }
+    ],
+    "uuid": [
+        {
+            "value": "05b7a869-c389-4a7d-9a00-36901a9c6bf0"
+        }
+    ],
+    "vid": [
+        {
+            "value": 12
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2019-02-12T04:36:02+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/2?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "72a32381-22fe-4944-ab85-0b45a51f8631"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/2?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "72a32381-22fe-4944-ab85-0b45a51f8631"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "Tips and Tricks",
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2016-02-06T04:27:28+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-02-12T04:36:02+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/wiki\/hardware\/tips",
+            "pid": 12,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>There are a number of things I need to document more formally elsewhere (to save my future self and others time in hardware-related setup with the Pi and accessories)\u2026 but for now, I\u2019ll just add them here, in this issue.<\/p>\r\n\r\n<h2 id=\"a-good-power-supply-is-essential\">A good power supply is <em>essential<\/em><\/h2>\r\n\r\n<p>I bought a decent, name-brand 6-port 2A-per-port (except for a couple) power supply to power all the Pis in the Dramble. I could\u2019ve also gone with a PC 5V PSU and hacked the power to the Pi through GPIO pins (a lot of cluster builds do this, since it\u2019s easier to custom wire and doesn\u2019t require a mess of micro USB cables).<\/p>\r\n\r\n<p>But either way, you need to get clean, 2A or greater power to the Pi, or you\u2019re going to run into weird issues, like random restarts, USB device issues, network flakiness, etc.<\/p>\r\n\r\n<p>If you ever run into strange issues with your Pi, check your power supply. For other Pis I\u2019ve been using Samsung and Apple 2A chargers (like the one that comes with an iPad), and they have worked great for a couple years!<\/p>\r\n\r\n<h2 id=\"increasing-current-available-for-usb-devices-to-12a\">Increasing Current available for USB devices to 1.2A<\/h2>\r\n\r\n<p>I have an SSD that seems to require something like 300-500mA of current to function properly. Mix that with a 40 mA USB keyboard and a 100-200mA WiFi dongle, and the default 600mA supplied over the Pi\u2019s bus is a bit cramped. To prevent plugging in of certain medium-high powered USB devices from crashing your Pi or taking down other USB devices, there\u2019s a <code>\/boot\/config.txt<\/code> parameter that allows you to double the default current on USB. To enable this mode:<\/p>\r\n\r\n<ol>\r\n\t<li><code>$ sudo nano \/boot\/config.txt<\/code><\/li>\r\n\t<li>Add the line <code>max_usb_current=1<\/code> and save the file.<\/li>\r\n\t<li>Reboot the Pi.<\/li>\r\n<\/ol>\r\n\r\n<p>This hack is only available on the Raspberry Pi B+ and later Pis (like the Pi 2 model B). Also, I have an <a href=\"http:\/\/raspberrypi.stackexchange.com\/q\/27708\/6506\">open question<\/a> (and <a href=\"http:\/\/www.raspberrypi.org\/forums\/viewtopic.php?f=29&amp;t=100244&amp;e=0\">another<\/a>) asking whether there are any real downsides to setting this value to <code>1<\/code>. For now, I\u2019m only setting this value for Pis where I need to power an external HDD\/SSD drive.<\/p>\r\n\r\n<h2 id=\"tips-for-getting-wifi-to-connect-automatically-and-reliably\">Tips for getting WiFi to connect automatically and reliably<\/h2>\r\n\r\n<p>See this guide, which I posted to Midwestern Mac\u2019s blog: <a href=\"http:\/\/www.midwesternmac.com\/blogs\/jeff-geerling\/edimax-ew-7811un-tenda-w311mi-wifi-raspberry-pi\">Setting up an 802.11n WiFi adapter on the Raspberry Pi<\/a>. Shows how to connect using WPA Supplicant, and how to prevent the WiFi from going into standby mode.<\/p>\r\n\r\n<h2 id=\"tips-for-fixing-a-botched-microsd-card\">Tips for fixing a botched microSD card<\/h2>\r\n\r\n<p>If you accidentally break your Pi by editing the wrong file or breaking configuration somewhere on the microSD card you use to boot the Pi, you can usually just pull it and mount it on another workstation, edit the file to revert the change, and pop it back in your Pi.<\/p>\r\n\r\n<p>I wrote a guide for <a href=\"http:\/\/www.midwesternmac.com\/blogs\/jeff-geerling\/mounting-raspberry-pis-ext4-sd\">mounting a Raspberry Pi\u2019s ext4-formatted microSD card in Ubuntu 14.04 on a Mac<\/a>, and the process for other platforms is similar (use a VM, make it easy).<\/p>\r\n\r\n<p>You can also re-image the entire SD card, and that\u2019s generally what I do if I\u2019ve botched things too badly (easy to rebuild things when the configuration\u2019s all done in Ansible :).<\/p>\r\n",
+            "format": "html",
+            "processed": "<p>There are a number of things I need to document more formally elsewhere (to save my future self and others time in hardware-related setup with the Pi and accessories)\u2026 but for now, I\u2019ll just add them here, in this issue.<\/p>\n\n<h2 id=\"a-good-power-supply-is-essential\">A good power supply is <em>essential<\/em><\/h2>\n\n<p>I bought a decent, name-brand 6-port 2A-per-port (except for a couple) power supply to power all the Pis in the Dramble. I could\u2019ve also gone with a PC 5V PSU and hacked the power to the Pi through GPIO pins (a lot of cluster builds do this, since it\u2019s easier to custom wire and doesn\u2019t require a mess of micro USB cables).<\/p>\n\n<p>But either way, you need to get clean, 2A or greater power to the Pi, or you\u2019re going to run into weird issues, like random restarts, USB device issues, network flakiness, etc.<\/p>\n\n<p>If you ever run into strange issues with your Pi, check your power supply. For other Pis I\u2019ve been using Samsung and Apple 2A chargers (like the one that comes with an iPad), and they have worked great for a couple years!<\/p>\n\n<h2 id=\"increasing-current-available-for-usb-devices-to-12a\">Increasing Current available for USB devices to 1.2A<\/h2>\n\n<p>I have an SSD that seems to require something like 300-500mA of current to function properly. Mix that with a 40 mA USB keyboard and a 100-200mA WiFi dongle, and the default 600mA supplied over the Pi\u2019s bus is a bit cramped. To prevent plugging in of certain medium-high powered USB devices from crashing your Pi or taking down other USB devices, there\u2019s a <code>\/boot\/config.txt<\/code> parameter that allows you to double the default current on USB. To enable this mode:<\/p>\n\n<ol><li><code>$ sudo nano \/boot\/config.txt<\/code><\/li>\n\t<li>Add the line <code>max_usb_current=1<\/code> and save the file.<\/li>\n\t<li>Reboot the Pi.<\/li>\n<\/ol><p>This hack is only available on the Raspberry Pi B+ and later Pis (like the Pi 2 model B). Also, I have an <a href=\"http:\/\/raspberrypi.stackexchange.com\/q\/27708\/6506\">open question<\/a> (and <a href=\"http:\/\/www.raspberrypi.org\/forums\/viewtopic.php?f=29&amp;t=100244&amp;e=0\">another<\/a>) asking whether there are any real downsides to setting this value to <code>1<\/code>. For now, I\u2019m only setting this value for Pis where I need to power an external HDD\/SSD drive.<\/p>\n\n<h2 id=\"tips-for-getting-wifi-to-connect-automatically-and-reliably\">Tips for getting WiFi to connect automatically and reliably<\/h2>\n\n<p>See this guide, which I posted to Midwestern Mac\u2019s blog: <a href=\"http:\/\/www.midwesternmac.com\/blogs\/jeff-geerling\/edimax-ew-7811un-tenda-w311mi-wifi-raspberry-pi\">Setting up an 802.11n WiFi adapter on the Raspberry Pi<\/a>. Shows how to connect using WPA Supplicant, and how to prevent the WiFi from going into standby mode.<\/p>\n\n<h2 id=\"tips-for-fixing-a-botched-microsd-card\">Tips for fixing a botched microSD card<\/h2>\n\n<p>If you accidentally break your Pi by editing the wrong file or breaking configuration somewhere on the microSD card you use to boot the Pi, you can usually just pull it and mount it on another workstation, edit the file to revert the change, and pop it back in your Pi.<\/p>\n\n<p>I wrote a guide for <a href=\"http:\/\/www.midwesternmac.com\/blogs\/jeff-geerling\/mounting-raspberry-pis-ext4-sd\">mounting a Raspberry Pi\u2019s ext4-formatted microSD card in Ubuntu 14.04 on a Mac<\/a>, and the process for other platforms is similar (use a VM, make it easy).<\/p>\n\n<p>You can also re-image the entire SD card, and that\u2019s generally what I do if I\u2019ve botched things too badly (easy to rebuild things when the configuration\u2019s all done in Ansible :).<\/p>\n",
+            "summary": "",
+            "lang": "en"
+        }
+    ]
+}
