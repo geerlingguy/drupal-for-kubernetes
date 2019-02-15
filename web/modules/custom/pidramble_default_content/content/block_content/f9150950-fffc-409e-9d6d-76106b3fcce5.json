@@ -53,7 +53,7 @@
     ],
     "changed": [
         {
-            "value": "2019-02-10T23:44:12+00:00",
+            "value": "2019-02-15T06:28:46+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -77,9 +77,9 @@
     ],
     "body": [
         {
-            "value": "<p class=\"text-align-center\">The Dramble is a cluster of Raspberry Pis powered by Kubernetes, Ansible, and Drupal 8, running in <a href=\"https:\/\/www.jeffgeerling.com\/\">Jeff Geerling<\/a>'s basement.<\/p>\r\n\r\n<p class=\"text-align-center\"><a href=\"https:\/\/github.com\/geerlingguy\/raspberry-pi-dramble\">Get the source code here<\/a>.<\/p>",
+            "value": "<p class=\"text-align-center\"><img src=\"\/themes\/custom\/pidramble\/logo.svg\" alt=\"Raspberry Pi Dramble Logo\" width=\"60\" height=\"73\"><\/p>\r\n\r\n<p class=\"text-align-center\">The Dramble is a cluster of Raspberry Pis powered by Kubernetes, Ansible, and Drupal 8, running in <a href=\"https:\/\/www.jeffgeerling.com\/\">Jeff Geerling<\/a>'s basement.<\/p>\r\n\r\n<p class=\"text-align-center\"><a href=\"https:\/\/github.com\/geerlingguy\/raspberry-pi-dramble\">Get the source code here<\/a>.<\/p>",
             "format": "html",
-            "processed": "<p class=\"text-align-center\">The Dramble is a cluster of Raspberry Pis powered by Kubernetes, Ansible, and Drupal 8, running in <a href=\"https:\/\/www.jeffgeerling.com\/\">Jeff Geerling<\/a>'s basement.<\/p>\n\n<p class=\"text-align-center\"><a href=\"https:\/\/github.com\/geerlingguy\/raspberry-pi-dramble\">Get the source code here<\/a>.<\/p>",
+            "processed": "<p class=\"text-align-center\"><img src=\"\/themes\/custom\/pidramble\/logo.svg\" alt=\"Raspberry Pi Dramble Logo\" width=\"60\" height=\"73\" \/><\/p>\n\n<p class=\"text-align-center\">The Dramble is a cluster of Raspberry Pis powered by Kubernetes, Ansible, and Drupal 8, running in <a href=\"https:\/\/www.jeffgeerling.com\/\">Jeff Geerling<\/a>'s basement.<\/p>\n\n<p class=\"text-align-center\"><a href=\"https:\/\/github.com\/geerlingguy\/raspberry-pi-dramble\">Get the source code here<\/a>.<\/p>",
             "summary": "",
             "lang": "en"
         }

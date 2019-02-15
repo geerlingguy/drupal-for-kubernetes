@@ -66,6 +66,17 @@ table tr:hover td {
   background-color: #eee;
 }
 
+/* Images */
+img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    height: auto;
+  }
+}
+
 /* Header and Logo */
 .site-logo {
   float: left;
@@ -144,7 +155,7 @@ h1.page-title {
   color: #fff;
   background-color: #006c12;
   margin: 1em 0 2em;
-  padding: 2em 8em;
+  padding: .5em 1em;
 }
 
 .region-footer .block a {
@@ -153,6 +164,12 @@ h1.page-title {
 
 .region-footer .block a:hover {
   color: #fff;
+}
+
+@media screen and (min-width: 720px) {
+  .region-footer .block {
+    padding: 2em 8em;
+  }
 }
 
 /* Nodes */
