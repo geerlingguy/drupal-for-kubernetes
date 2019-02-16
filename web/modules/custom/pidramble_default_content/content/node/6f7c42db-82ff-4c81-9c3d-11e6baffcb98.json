@@ -1,0 +1,157 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/home?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/page"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "href": "http:\/\/default\/user\/2?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "href": "http:\/\/default\/user\/2?_format=hal_json",
+                "lang": "en"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 28
+        }
+    ],
+    "uuid": [
+        {
+            "value": "6f7c42db-82ff-4c81-9c3d-11e6baffcb98"
+        }
+    ],
+    "vid": [
+        {
+            "value": 28
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "page"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2019-02-15T05:34:53+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/2?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "72a32381-22fe-4944-ab85-0b45a51f8631"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/page\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/2?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "72a32381-22fe-4944-ab85-0b45a51f8631"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "Home",
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-02-15T05:34:32+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-02-15T06:21:05+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "path": [
+        {
+            "alias": "\/home",
+            "pid": 28,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>Everything on this site is being served from a Drupal site, running on a Kubernetes cluster of Raspberry Pi computers, in <a href=\"https:\/\/www.jeffgeerling.com\">Jeff Geerling<\/a>'s basement.<\/p>\r\n\r\n<p class=\"text-align-center\"><img alt=\"Raspberry Pi Dramble - Hero Shot\" data-entity-type=\"\" data-entity-uuid=\"\" height=\"auto\" src=\"https:\/\/raw.githubusercontent.com\/geerlingguy\/raspberry-pi-dramble\/master\/images\/raspberry-pi-dramble-hero-2019.jpg\" width=\"750\" \/><\/p>\r\n\r\n<p>The Raspberry Pi Dramble (pictured above) is a cluster of Raspberry Pis which has been used for many years as an instructional tool for cluster-based web hosting, highlighting aspects like:<\/p>\r\n\r\n<ul>\r\n\t<li>Multi-server orchestration (with Ansible)<\/li>\r\n\t<li>Load balancing (with Nginx)<\/li>\r\n\t<li>Cluster container orchestration (with Kubernetes)<\/li>\r\n\t<li>Scalable and resilient website hosting (with Apache and MySQL)<\/li>\r\n\t<li>High performance CMS running on (very) modest hardware (with Drupal)<\/li>\r\n<\/ul>\r\n\r\n<p>You're currently browsing the site as hosted on the fourth major iteration of the Pi Dramble, and this cluster is making it's way around the US for a series of presentations on the above topics, which <a href=\"\/wiki\/appearances\">you can find linked here<\/a>.<\/p>\r\n\r\n<p>All the code for the cluster (including this website's codebase) is freely available on GitHub:<\/p>\r\n\r\n<ul>\r\n\t<li><a href=\"https:\/\/github.com\/geerlingguy\/raspberry-pi-dramble\">Raspberry Pi Dramble project<\/a><\/li>\r\n\t<li><a href=\"https:\/\/github.com\/geerlingguy\/drupal-for-kubernetes\">Drupal for Kubernetes project<\/a><\/li>\r\n<\/ul>\r\n\r\n<p>Please feel free to browse the Wiki and learn more about what it takes to host highly-available websites on a stack of tiny computers in a basement\u2014and why it might or might not be a good idea for you to do it too!<\/p>\r\n",
+            "format": "html",
+            "processed": "<p>Everything on this site is being served from a Drupal site, running on a Kubernetes cluster of Raspberry Pi computers, in <a href=\"https:\/\/www.jeffgeerling.com\">Jeff Geerling<\/a>'s basement.<\/p>\n\n<p class=\"text-align-center\"><img alt=\"Raspberry Pi Dramble - Hero Shot\" data-entity-type=\"\" data-entity-uuid=\"\" height=\"auto\" src=\"https:\/\/raw.githubusercontent.com\/geerlingguy\/raspberry-pi-dramble\/master\/images\/raspberry-pi-dramble-hero-2019.jpg\" width=\"750\" \/><\/p>\n\n<p>The Raspberry Pi Dramble (pictured above) is a cluster of Raspberry Pis which has been used for many years as an instructional tool for cluster-based web hosting, highlighting aspects like:<\/p>\n\n<ul><li>Multi-server orchestration (with Ansible)<\/li>\n\t<li>Load balancing (with Nginx)<\/li>\n\t<li>Cluster container orchestration (with Kubernetes)<\/li>\n\t<li>Scalable and resilient website hosting (with Apache and MySQL)<\/li>\n\t<li>High performance CMS running on (very) modest hardware (with Drupal)<\/li>\n<\/ul><p>You're currently browsing the site as hosted on the fourth major iteration of the Pi Dramble, and this cluster is making it's way around the US for a series of presentations on the above topics, which <a href=\"\/wiki\/appearances\">you can find linked here<\/a>.<\/p>\n\n<p>All the code for the cluster (including this website's codebase) is freely available on GitHub:<\/p>\n\n<ul><li><a href=\"https:\/\/github.com\/geerlingguy\/raspberry-pi-dramble\">Raspberry Pi Dramble project<\/a><\/li>\n\t<li><a href=\"https:\/\/github.com\/geerlingguy\/drupal-for-kubernetes\">Drupal for Kubernetes project<\/a><\/li>\n<\/ul><p>Please feel free to browse the Wiki and learn more about what it takes to host highly-available websites on a stack of tiny computers in a basement\u2014and why it might or might not be a good idea for you to do it too!<\/p>\n",
+            "summary": "",
+            "lang": "en"
+        }
+    ]
+}

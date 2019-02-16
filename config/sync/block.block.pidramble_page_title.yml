@@ -2,6 +2,8 @@ uuid: 9870ca71-7f40-47b0-8d65-d66050663676
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - pidramble
 _core:
@@ -17,4 +19,9 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }
