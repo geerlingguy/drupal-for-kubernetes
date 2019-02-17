@@ -54,7 +54,7 @@ So let's do something I do for all my Drupal sites: install the [Admin Toolbar](
   1. You can now _reinstall_ the site from scratch, but using the configuration you previously exported (so it will have the Admin Toolbar module and everything else, but not this silly slogan you don't like), by adding the flag `--existing-config` to the install command:
 
      ```
-     docker-compose exec drupal bash -c 'vendor/bin/drush site:install minimal --db-url="mysql://drupal:$DRUPAL_DB_PASSWORD@$DRUPAL_DB_HOST/drupal" --site-name="My Drupal Site" --existing-config -y'
+     docker-compose exec drupal bash -c 'vendor/bin/drush site:install minimal --db-url="mysql://drupal:$DRUPAL_DATABASE_PASSWORD@$DRUPAL_DATABASE_HOST/drupal" --site-name="My Drupal Site" --existing-config -y'
      ```
 
   1. A minute or so later, if you log into the site using the `admin` user and the new password Drush prints to the command line, you'll see that the Slogan was reverted to being blank, as it was before you changed it.

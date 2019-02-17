@@ -6,8 +6,8 @@ services:
     image: geerlingguy/drupal-for-kubernetes:latest
     container_name: drupal-for-kubernetes
     environment:
-      DRUPAL_DB_HOST: mysql
-      DRUPAL_DB_PASSWORD: drupal
+      DRUPAL_DATABASE_HOST: mysql
+      DRUPAL_DATABASE_PASSWORD: drupal
       DRUPAL_DOWNLOAD_IF_NOT_PRESENT: "false"
     ports:
       - "80:80"

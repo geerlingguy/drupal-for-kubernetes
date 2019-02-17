@@ -36,7 +36,7 @@ Part of the purpose of this project is to outline the exact steps required to bu
   1. Once the container is running, you need to install Drupal. You can either access http://localhost/ and install using the UI, or install via Drush:
 
      ```
-     docker-compose exec drupal bash -c 'vendor/bin/drush site:install minimal --db-url="mysql://drupal:$DRUPAL_DB_PASSWORD@$DRUPAL_DB_HOST/drupal" --site-name="My Drupal Site" -y'
+     docker-compose exec drupal bash -c 'vendor/bin/drush site:install minimal --db-url="mysql://drupal:$DRUPAL_DATABASE_PASSWORD@$DRUPAL_DATABASE_HOST/drupal" --site-name="My Drupal Site" -y'
      ```
 
   1. Visit http://localhost/ in your browser, and login as `admin` using the password Drush printed in the 'Installation complete' message.

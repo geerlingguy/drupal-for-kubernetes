@@ -23,6 +23,7 @@ COPY --from=vendor /app/ /var/www/html/
 # Copy other required configuration into the container.
 COPY config/ /var/www/html/config/
 COPY load.environment.php /var/www/html/load.environment.php
+COPY pidramble.settings.php /var/www/html/web/sites/default/settings.php
 RUN chown -R www-data:www-data /var/www/html/web
 
 # Adjust the Apache docroot.
