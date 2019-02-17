@@ -6,15 +6,19 @@ services:
     image: geerlingguy/drupal-for-kubernetes:latest
     container_name: drupal-for-kubernetes
     environment:
-      DRUPAL_DATABASE_HOST: mysql
-      DRUPAL_DATABASE_PASSWORD: drupal
-      DRUPAL_DOWNLOAD_IF_NOT_PRESENT: "false"
+      DRUPAL_DATABASE_HOST: 'mysql'
+      DRUPAL_DATABASE_PORT: '3306'
+      DRUPAL_DATABASE_NAME: 'drupal'
+      DRUPAL_DATABASE_USERNAME: 'drupal'
+      DRUPAL_DATABASE_PASSWORD: 'drupal'
+      DRUPAL_HASH_SALT: 'fe918c992fb1bcfa01f32303c8b21f3d0a0'
+      DRUPAL_DOWNLOAD_IF_NOT_PRESENT: 'false'
     ports:
       - "80:80"
     restart: always
     # Share the project into the container for local development. Comment out
     # this line to test the production-ready pre-built container codebase.
-    volumes: ['./:/var/www/html:rw,delegated']
+    # volumes: ['./:/var/www/html:rw,delegated']
 
   mysql:
     image: mysql:5.7
