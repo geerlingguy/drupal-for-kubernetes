@@ -10,3 +10,4 @@
 ## Preparing the project for a Kubernetes Deployment
 
   1. [Push the Drupal image to a Docker registry](push-to-registry.md)
+  1. [Deploy Drupal to Kubernetes](deploy-drupal-kubernetes.md)
