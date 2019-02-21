@@ -1,3 +1,5 @@
+ARG DRUPAL_BASE_IMAGE=geerlingguy/drupal:latest
+
 # PHP Dependency install via Composer.
 FROM composer as vendor
 
@@ -13,7 +15,7 @@ RUN composer install \
     --prefer-dist
 
 # Build the Docker image for Drupal.
-FROM geerlingguy/drupal:latest
+FROM $DRUPAL_BASE_IMAGE
 
 ENV DRUPAL_MD5 aedc6598b71c5393d30242b8e14385e5
 
@@ -28,7 +30,5 @@ RUN chown -R www-data:www-data /var/www/html/web
 
 # Adjust the Apache docroot.
 ENV APACHE_DOCUMENT_ROOT=/var/www/html/web
-RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
-RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
 
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]

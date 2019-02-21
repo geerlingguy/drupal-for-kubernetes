@@ -4,9 +4,25 @@ Once you have your Drupal Project ready for deployment to Kubernetes, you have t
 
 > This guide assumes you're using the Raspberry Pi Dramble project for deployment—this Kubernetes cluster includes a built-in Docker Registry to make Docker image management easy—but the same process would apply using any Docker Registry, whether Docker Hub, Quay, Google Container Registry, Amazon ECR, or some other registry. Please see those registries' documentation for specific connection information.
 
-Assuming you've already built a version of the Drupal container you're happy with using `docker build -t geerlingguy/drupal-for-kubernetes .`, you need to tag it with the registry URL so it can be pushed:
+  1. Build the Docker image for the site using one of the following commands:
 
-    docker tag geerlingguy/drupal-for-kubernetes:latest registry.pidramble.test/geerlingguy/drupal-for-kubernetes:latest
+     ```
+     # To build for a local Vagrant-based cluster or an Intel/AMD cluster:
+     docker build -t geerlingguy/drupal-for-kubernetes:latest .
+     
+     # To build for Raspberry Pi (e.g. the Raspberry Pi Dramble cluster):
+     docker build -t geerlingguy/drupal-for-kubernetes:arm --build-arg DRUPAL_BASE_IMAGE=geerlingguy/drupal:latest-arm32v7 .
+     ```
+
+  2. After the image is built, tag it with the registry URL so it can be pushed:
+
+     ```
+     # For Vagrant/Intel/AMD:
+     docker tag geerlingguy/drupal-for-kubernetes:latest registry.pidramble.test/geerlingguy/drupal-for-kubernetes:latest
+     
+     # For Raspberry Pi:
+     docker tag geerlingguy/drupal-for-kubernetes:arm registry.pidramble.test/geerlingguy/drupal-for-kubernetes:arm
+     ```
 
 At this point, if you run `docker images` locally, you should see something like:
 
@@ -20,4 +36,8 @@ At this point, if you run `docker images` locally, you should see something like
 
 Assuming the Pi Dramble cluster is running and the registry is accessible at `registry.pidramble.test` (see the Raspberry Pi Dramble's documentation for more on registry setup), you can push the image to the Pi Dramble registry:
 
+    # For Vagrant/Intel/AMD:
     docker push registry.pidramble.test/geerlingguy/drupal-for-kubernetes:latest
+    
+    # For Raspberry Pi:
+    docker push registry.pidramble.test/geerlingguy/drupal-for-kubernetes:arm
