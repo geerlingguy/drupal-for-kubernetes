@@ -26,13 +26,19 @@ Please read through the [project documentation](docs/README.md) for details abou
 
      (Wait for the environment to come up—you can monitor the logs with `docker-compose logs -f`).
 
-  1. Once the container is running, install Drupal. You can either access http://localhost/ and install using the UI, or install via Drush:
+  1. Once the container is running, install Dependencies and install Drupal. You can either access http://localhost/ and install using the UI, or install via Drush:
 
      ```
+     # Install dependencies.
+     docker-compose exec drupal composer install
+
+     # Install Drupal.
      docker-compose exec drupal bash -c 'vendor/bin/drush site:install minimal --db-url="mysql://drupal:$DRUPAL_DATABASE_PASSWORD@$DRUPAL_DATABASE_HOST/drupal" --site-name="Drupal Example Site for Kubernetes" --existing-config -y'
      ```
 
   1. Visit http://localhost/ in your browser, and login as `admin` using the password Drush printed in the 'Installation complete' message.
+
+> Note: If you have PHP and Composer installed on your host computer, you can run the `composer install` command there instead of through the Docker container for a bit of a speedup.
 
 ### Managing Configuration
 
