@@ -38,7 +38,7 @@ Please read through the [project documentation](docs/README.md) for details abou
 
   1. Visit http://localhost/ in your browser, and login as `admin` using the password Drush printed in the 'Installation complete' message.
 
-> Note: If you have PHP and Composer installed on your host computer, you can run the `composer install` command there instead of through the Docker container for a bit of a speedup.
+> Note: If you have PHP and Composer installed on your host computer, you can run the `composer install` command there instead of through the Docker container for a bit of a speedup. Also note that if you're using Docker for Mac or Windows, it can take a couple minutes after `composer install` completes for all the filesystem changes to be present inside the Docker container!
 
 ### Managing Configuration
 
