@@ -4,7 +4,7 @@ mail: admin@example.com
 slogan: 'Drupal 8 on a cluster of Raspberry Pis'
 page:
   403: ''
-  404: ''
+  404: /node/29
   front: /node/28
 admin_compact_mode: false
 weight_select_max: 100
