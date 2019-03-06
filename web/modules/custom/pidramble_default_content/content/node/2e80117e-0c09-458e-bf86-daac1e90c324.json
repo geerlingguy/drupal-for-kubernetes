@@ -108,7 +108,7 @@
     ],
     "changed": [
         {
-            "value": "2019-02-12T04:33:25+00:00",
+            "value": "2019-03-04T03:25:21+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -140,16 +140,16 @@
     "path": [
         {
             "alias": "\/wiki\/hardware\/necessities",
-            "pid": 9,
+            "pid": 1,
             "langcode": "en",
             "lang": "en"
         }
     ],
     "body": [
         {
-            "value": "<p>Some other things I had on hand that are useful in building out the Dramble:<\/p>\r\n\r\n<ul>\r\n\t<li>Cat 5e or Cat 6 network cable for making patch cords. (I have hundreds of feet of the stuff, and can quickly punch down a patch cable, so I just made my own).<\/li>\r\n\t<li><a href=\"https:\/\/www.amazon.com\/TRENDnet-RJ-45-RJ-12-RJ-11-TC-CT68\/dp\/B0000AZK4G\/ref=as_li_ss_tl?ie=UTF8&amp;qid=1467833082&amp;sr=8-1&amp;keywords=TRENDnet+RJ-45+crimper&amp;linkCode=ll1&amp;tag=mmjjg-20&amp;linkId=639d21e94e8410fb19eb5ca121cfa589\">TRENDnet RJ-45 crimper<\/a> (for crimping ends of the patch cords).<\/li>\r\n\t<li>A power outlet. (I am planning on adding an inline UPS at some point in the future, and could run the cluster off this for a few minutes at least\u2026 so the power outlet is somewhat optional :)<\/li>\r\n\t<li>A computer to run the Ansible playbooks (you can do it all on the Pis themselves, but I prefer working on my Mac workstation and leaving all the Pis headless).<\/li>\r\n<\/ul>\r\n",
+            "value": "<p>Some other things I had on hand that are useful in building out the Dramble:<\/p>\r\n\r\n<ul>\r\n\t<li>Cat 5e or Cat 6 network cable for making patch cords. (I have hundreds of feet of the stuff, and can quickly punch down a patch cable, so I just made my own). If you can't make your own, <a href=\"https:\/\/www.amazon.com\/gp\/product\/B01MR94NJY\/ref=as_li_ss_tl?ie=UTF8&amp;psc=1&amp;linkCode=ll1&amp;tag=mmjjg-20&amp;linkId=ce3cab3632b016933a92310d57bd51f8&amp;language=en_US\">a 10-pack of 6\" Cat6 cables is a little over $10 on Amazon<\/a>.<\/li>\r\n\t<li><a href=\"https:\/\/www.amazon.com\/TRENDnet-RJ-45-RJ-12-RJ-11-TC-CT68\/dp\/B0000AZK4G\/ref=as_li_ss_tl?ie=UTF8&amp;qid=1467833082&amp;sr=8-1&amp;keywords=TRENDnet+RJ-45+crimper&amp;linkCode=ll1&amp;tag=mmjjg-20&amp;linkId=639d21e94e8410fb19eb5ca121cfa589\">TRENDnet RJ-45 crimper<\/a> (for crimping ends of the patch cords).<\/li>\r\n\t<li>A power outlet. (I am planning on adding an inline UPS at some point in the future, and could run the cluster off this for a few minutes at least\u2026 so the power outlet is somewhat optional :)<\/li>\r\n\t<li>A computer to run the Ansible playbooks (you can do it all on the Pis themselves, but I prefer working on my Mac workstation and leaving all the Pis headless).<\/li>\r\n<\/ul>\r\n",
             "format": "html",
-            "processed": "<p>Some other things I had on hand that are useful in building out the Dramble:<\/p>\n\n<ul><li>Cat 5e or Cat 6 network cable for making patch cords. (I have hundreds of feet of the stuff, and can quickly punch down a patch cable, so I just made my own).<\/li>\n\t<li><a href=\"https:\/\/www.amazon.com\/TRENDnet-RJ-45-RJ-12-RJ-11-TC-CT68\/dp\/B0000AZK4G\/ref=as_li_ss_tl?ie=UTF8&amp;qid=1467833082&amp;sr=8-1&amp;keywords=TRENDnet+RJ-45+crimper&amp;linkCode=ll1&amp;tag=mmjjg-20&amp;linkId=639d21e94e8410fb19eb5ca121cfa589\">TRENDnet RJ-45 crimper<\/a> (for crimping ends of the patch cords).<\/li>\n\t<li>A power outlet. (I am planning on adding an inline UPS at some point in the future, and could run the cluster off this for a few minutes at least\u2026 so the power outlet is somewhat optional :)<\/li>\n\t<li>A computer to run the Ansible playbooks (you can do it all on the Pis themselves, but I prefer working on my Mac workstation and leaving all the Pis headless).<\/li>\n<\/ul>",
+            "processed": "<p>Some other things I had on hand that are useful in building out the Dramble:<\/p>\n\n<ul><li>Cat 5e or Cat 6 network cable for making patch cords. (I have hundreds of feet of the stuff, and can quickly punch down a patch cable, so I just made my own). If you can't make your own, <a href=\"https:\/\/www.amazon.com\/gp\/product\/B01MR94NJY\/ref=as_li_ss_tl?ie=UTF8&amp;psc=1&amp;linkCode=ll1&amp;tag=mmjjg-20&amp;linkId=ce3cab3632b016933a92310d57bd51f8&amp;language=en_US\">a 10-pack of 6\" Cat6 cables is a little over $10 on Amazon<\/a>.<\/li>\n\t<li><a href=\"https:\/\/www.amazon.com\/TRENDnet-RJ-45-RJ-12-RJ-11-TC-CT68\/dp\/B0000AZK4G\/ref=as_li_ss_tl?ie=UTF8&amp;qid=1467833082&amp;sr=8-1&amp;keywords=TRENDnet+RJ-45+crimper&amp;linkCode=ll1&amp;tag=mmjjg-20&amp;linkId=639d21e94e8410fb19eb5ca121cfa589\">TRENDnet RJ-45 crimper<\/a> (for crimping ends of the patch cords).<\/li>\n\t<li>A power outlet. (I am planning on adding an inline UPS at some point in the future, and could run the cluster off this for a few minutes at least\u2026 so the power outlet is somewhat optional :)<\/li>\n\t<li>A computer to run the Ansible playbooks (you can do it all on the Pis themselves, but I prefer working on my Mac workstation and leaving all the Pis headless).<\/li>\n<\/ul>",
             "summary": "",
             "lang": "en"
         }

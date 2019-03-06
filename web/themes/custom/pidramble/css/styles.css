@@ -17,7 +17,6 @@ body {
 
 a {
   color: #1976bc;
-  transition: all .2s;
 }
 
 a:visited {
@@ -26,6 +25,7 @@ a:visited {
 
 a:hover {
   color: #083f68;
+  transition: all .2s;
 }
 
 p {
@@ -41,6 +41,7 @@ blockquote {
 
 /* Tables */
 table {
+  font-size: .8em;
   min-width: 600px;
   width: 100%;
 }
@@ -59,11 +60,11 @@ table thead th {
 
 table td {
   border-bottom: 1px solid #ccc;
-  transition: all .2s;
 }
 
 table tr:hover td {
   background-color: #eee;
+  transition: all .2s;
 }
 
 /* Images */
@@ -111,7 +112,6 @@ img {
 .region-primary-menu nav a {
   text-decoration: none;
   display: block;
-  transition: all .2s;
 }
 
 .region-primary-menu nav a.is-active {
@@ -122,6 +122,7 @@ img {
 .region-primary-menu nav a:hover {
   background-color: #0a5187;
   color: #fff;
+  transition: all .2s;
 }
 
 .region-primary-menu .menu-item {

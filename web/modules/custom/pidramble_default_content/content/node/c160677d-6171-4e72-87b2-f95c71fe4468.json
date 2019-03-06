@@ -108,7 +108,7 @@
     ],
     "changed": [
         {
-            "value": "2019-02-12T04:35:26+00:00",
+            "value": "2019-03-04T03:30:40+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -140,16 +140,16 @@
     "path": [
         {
             "alias": "\/wiki\/hardware\/extras",
-            "pid": 11,
+            "pid": 10,
             "langcode": "en",
             "lang": "en"
         }
     ],
     "body": [
         {
-            "value": "<p>Other accessories, optional but helpful for general Pi development:<\/p>\r\n\r\n<ul>\r\n\t<li><a href=\"http:\/\/www.amazon.com\/gp\/product\/B003MTTJOY\/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B003MTTJOY&amp;linkCode=as2&amp;tag=mmjjg-20&amp;linkId=WCTEZWNBLNNQ35E5\">802.11b\/g\/n USB WiFi adapter<\/a> (I have a few; handy for getting online away from wired jack\u2014only if you're using an older Pi model without built-in WiFi)<\/li>\r\n\t<li><a href=\"http:\/\/www.amazon.com\/gp\/product\/B006S21SAK\/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B006S21SAK&amp;linkCode=as2&amp;tag=mmjjg-20&amp;linkId=2D7X6HRTJFTESGT2\">5mm Diffused RGB LEDs<\/a> (great for showing status!)<\/li>\r\n\t<li><a href=\"http:\/\/www.amazon.com\/gp\/product\/B00Q1T07O8\/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00Q1T07O8&amp;linkCode=as2&amp;tag=mmjjg-20&amp;linkId=JG3OGOMBG75D6BFY\">Assembled RPi GPIO Cobbler with 40-pin cable<\/a> (helpful for prototyping)<\/li>\r\n\t<li>Half-size breadboard<\/li>\r\n\t<li>Breadboard\/prototyping jumper cables<\/li>\r\n<\/ul>\r\n",
+            "value": "<p>Other accessories, optional but helpful for general Pi development:<\/p>\r\n\r\n<ul>\r\n\t<li><a href=\"http:\/\/www.amazon.com\/gp\/product\/B003MTTJOY\/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B003MTTJOY&amp;linkCode=as2&amp;tag=mmjjg-20&amp;linkId=WCTEZWNBLNNQ35E5\">802.11b\/g\/n USB WiFi adapter<\/a> (If you have older model Pis without built-in WiFi, it can be useful to be able to switch between wired and wireless depending on your proximity to a network jack!)<\/li>\r\n\t<li><a href=\"http:\/\/www.amazon.com\/gp\/product\/B006S21SAK\/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B006S21SAK&amp;linkCode=as2&amp;tag=mmjjg-20&amp;linkId=2D7X6HRTJFTESGT2\">5mm Diffused RGB LEDs<\/a> (great for showing status!)<\/li>\r\n\t<li><a href=\"http:\/\/www.amazon.com\/gp\/product\/B00Q1T07O8\/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00Q1T07O8&amp;linkCode=as2&amp;tag=mmjjg-20&amp;linkId=JG3OGOMBG75D6BFY\">Assembled RPi GPIO Cobbler with 40-pin cable<\/a> (helpful for prototyping)<\/li>\r\n\t<li>Half-size breadboard<\/li>\r\n\t<li>Breadboard\/prototyping jumper cables<\/li>\r\n<\/ul>\r\n",
             "format": "html",
-            "processed": "<p>Other accessories, optional but helpful for general Pi development:<\/p>\n\n<ul><li><a href=\"http:\/\/www.amazon.com\/gp\/product\/B003MTTJOY\/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B003MTTJOY&amp;linkCode=as2&amp;tag=mmjjg-20&amp;linkId=WCTEZWNBLNNQ35E5\">802.11b\/g\/n USB WiFi adapter<\/a> (I have a few; handy for getting online away from wired jack\u2014only if you're using an older Pi model without built-in WiFi)<\/li>\n\t<li><a href=\"http:\/\/www.amazon.com\/gp\/product\/B006S21SAK\/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B006S21SAK&amp;linkCode=as2&amp;tag=mmjjg-20&amp;linkId=2D7X6HRTJFTESGT2\">5mm Diffused RGB LEDs<\/a> (great for showing status!)<\/li>\n\t<li><a href=\"http:\/\/www.amazon.com\/gp\/product\/B00Q1T07O8\/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00Q1T07O8&amp;linkCode=as2&amp;tag=mmjjg-20&amp;linkId=JG3OGOMBG75D6BFY\">Assembled RPi GPIO Cobbler with 40-pin cable<\/a> (helpful for prototyping)<\/li>\n\t<li>Half-size breadboard<\/li>\n\t<li>Breadboard\/prototyping jumper cables<\/li>\n<\/ul>",
+            "processed": "<p>Other accessories, optional but helpful for general Pi development:<\/p>\n\n<ul><li><a href=\"http:\/\/www.amazon.com\/gp\/product\/B003MTTJOY\/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B003MTTJOY&amp;linkCode=as2&amp;tag=mmjjg-20&amp;linkId=WCTEZWNBLNNQ35E5\">802.11b\/g\/n USB WiFi adapter<\/a> (If you have older model Pis without built-in WiFi, it can be useful to be able to switch between wired and wireless depending on your proximity to a network jack!)<\/li>\n\t<li><a href=\"http:\/\/www.amazon.com\/gp\/product\/B006S21SAK\/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B006S21SAK&amp;linkCode=as2&amp;tag=mmjjg-20&amp;linkId=2D7X6HRTJFTESGT2\">5mm Diffused RGB LEDs<\/a> (great for showing status!)<\/li>\n\t<li><a href=\"http:\/\/www.amazon.com\/gp\/product\/B00Q1T07O8\/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00Q1T07O8&amp;linkCode=as2&amp;tag=mmjjg-20&amp;linkId=JG3OGOMBG75D6BFY\">Assembled RPi GPIO Cobbler with 40-pin cable<\/a> (helpful for prototyping)<\/li>\n\t<li>Half-size breadboard<\/li>\n\t<li>Breadboard\/prototyping jumper cables<\/li>\n<\/ul>",
             "summary": "",
             "lang": "en"
         }
