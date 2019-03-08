@@ -33,7 +33,7 @@ Please read through the [project documentation](docs/README.md) for details abou
      docker-compose exec drupal composer install
 
      # Install Drupal.
-     docker-compose exec drupal bash -c 'vendor/bin/drush site:install minimal --db-url="mysql://drupal:$DRUPAL_DATABASE_PASSWORD@$DRUPAL_DATABASE_HOST/drupal" --site-name="Drupal Example Site for Kubernetes" --existing-config -y'
+     docker-compose exec drupal bash -c 'drush site:install minimal --db-url="mysql://drupal:$DRUPAL_DATABASE_PASSWORD@$DRUPAL_DATABASE_HOST/drupal" --site-name="Drupal Example Site for Kubernetes" --existing-config -y'
      ```
 
   1. Visit http://localhost/ in your browser, and login as `admin` using the password Drush printed in the 'Installation complete' message.
@@ -44,7 +44,7 @@ Please read through the [project documentation](docs/README.md) for details abou
 
 After making any configuration changes on the website, you can export the configuration to disk so it can be preserved in the codebase and deployed to the production site:
 
-    docker-compose exec drupal bash -c 'vendor/bin/drush config:export -y'
+    docker-compose exec drupal bash -c 'drush config:export -y'
 
 For more on the way this project's configuration changes are handled, and the general site development process, see the [project documentation](docs/README.md).
 

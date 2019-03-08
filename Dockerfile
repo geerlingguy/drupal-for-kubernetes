@@ -28,6 +28,11 @@ COPY load.environment.php /var/www/html/load.environment.php
 COPY pidramble.settings.php /var/www/html/web/sites/default/settings.php
 RUN chown -R www-data:www-data /var/www/html/web
 
+# Add Drush Launcher.
+RUN curl -OL https://github.com/drush-ops/drush-launcher/releases/download/0.6.0/drush.phar \
+ && chmod +x drush.phar \
+ && mv drush.phar /usr/local/bin/drush
+
 # Adjust the Apache docroot.
 ENV APACHE_DOCUMENT_ROOT=/var/www/html/web
 

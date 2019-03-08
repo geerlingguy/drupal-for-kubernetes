@@ -22,7 +22,7 @@ However, you need to remember to _export the site's configuration_ now, so the t
   1. Run the command:
 
      ```
-     docker-compose exec drupal bash -c 'vendor/bin/drush config:export -y'
+     docker-compose exec drupal bash -c 'drush config:export -y'
      ```
 
   1. Commit the changed configuration to Git:

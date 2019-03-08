@@ -46,7 +46,7 @@ Once the new container image has been deployed, you can either install Drupal us
     export KUBECONFIG=~/.kube/config-dramble-pi
     
     DRUPAL_POD=$(kubectl get pods -n drupal -o name --no-headers=true -o custom-columns=":metadata.name" | grep drupal | head -n 1)
-    kubectl exec -n drupal $DRUPAL_POD -- bash -c 'vendor/bin/drush site:install minimal --db-url="mysql://drupal:$DRUPAL_DATABASE_PASSWORD@$DRUPAL_DATABASE_HOST/drupal" --site-name="Drupal Example Site for Kubernetes" --existing-config -y'
+    kubectl exec -n drupal $DRUPAL_POD -- bash -c 'drush site:install minimal --db-url="mysql://drupal:$DRUPAL_DATABASE_PASSWORD@$DRUPAL_DATABASE_HOST/drupal" --site-name="Drupal Example Site for Kubernetes" --existing-config -y'
 
 Drupal should then be installed, and you have your new site running in Kubernetes at http://cluster.pidramble.test/, yay!
 
@@ -58,8 +58,8 @@ If you need to _update_ Drupal and/or the codebase, perform all the earlier step
     export KUBECONFIG=~/.kube/config-dramble-pi
     
     DRUPAL_POD=$(kubectl get pods -n drupal -o name --no-headers=true -o custom-columns=":metadata.name" | grep drupal | head -n 1)
-    kubectl exec -n drupal $DRUPAL_POD -- bash -c 'vendor/bin/drush updatedb -y'
-    kubectl exec -n drupal $DRUPAL_POD -- bash -c 'vendor/bin/drush config:import'
-    kubectl exec -n drupal $DRUPAL_POD -- bash -c 'vendor/bin/drush cache:rebuild'
+    kubectl exec -n drupal $DRUPAL_POD -- bash -c 'drush updatedb -y'
+    kubectl exec -n drupal $DRUPAL_POD -- bash -c 'drush config:import'
+    kubectl exec -n drupal $DRUPAL_POD -- bash -c 'drush cache:rebuild'
 
 Note that Kubernetes does not pull new container images by default unless the container's `tag` has changed. So for ongoing deployments/updates, you should probably do something like tag the image with a release version (e.g. `1.2.3`), or a Git commit hash corresponding to the site codebase's commit at the time of the deployment (e.g. `bbbb8a1`).

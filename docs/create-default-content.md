@@ -49,7 +49,7 @@ Anyways, let's get started with Default Content:
   1. Once you're satisfied things worked correctly, go ahead and export the site configuration so the Default Content module and your site's default content module are enabled:
 
      ```
-     docker-compose exec drupal bash -c 'vendor/bin/drush config:export -y'
+     docker-compose exec drupal bash -c 'drush config:export -y'
      ```
 
   1. Reinstall Drupal from scratch, and you _should_ see that not only is the Drupal site back the same way you had configured it, there are also entities that are recreated after an install which should be helpful for local development and theming.

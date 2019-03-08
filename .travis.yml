@@ -22,7 +22,7 @@ script:
   # Install Drupal.
   - >
     docker-compose exec drupal bash -c
-    'vendor/bin/drush site:install minimal
+    'drush site:install minimal
     --db-url="mysql://drupal:$DRUPAL_DATABASE_PASSWORD@$DRUPAL_DATABASE_HOST/drupal"
     --site-name="Drupal Example Site for Kubernetes"
     --existing-config
