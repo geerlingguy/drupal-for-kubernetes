@@ -1,0 +1,20 @@
+uuid: 6dcaf0b2-1e2f-421e-b76b-ef90b7ca556a
+langcode: en
+status: true
+dependencies:
+  module:
+    - pidramble_analytics
+  theme:
+    - pidramble
+id: pidrambleanalytics
+theme: pidramble
+region: footer
+weight: 0
+provider: null
+plugin: pidramble_analytics
+settings:
+  id: pidramble_analytics
+  label: 'Pi Dramble Analytics'
+  provider: pidramble_analytics
+  label_display: '0'
+visibility: {  }

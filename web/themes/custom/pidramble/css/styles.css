@@ -151,28 +151,6 @@ h1.page-title {
   margin-top: .15em;
 }
 
-/* Footer */
-.region-footer .block {
-  color: #fff;
-  background-color: #006c12;
-  margin: 1em 0 2em;
-  padding: .5em 1em;
-}
-
-.region-footer .block a {
-  color: #9cd1f9;
-}
-
-.region-footer .block a:hover {
-  color: #fff;
-}
-
-@media screen and (min-width: 720px) {
-  .region-footer .block {
-    padding: 2em 8em;
-  }
-}
-
 /* Nodes */
 article h2 a {
   color: #000;
@@ -202,4 +180,26 @@ article li {
 
 .menu--wiki ul.menu {
   list-style-type: disc;
+}
+
+/* Footer Block */
+#block-footer {
+  color: #fff;
+  background-color: #006c12;
+  margin: 1em 0 2em;
+  padding: .5em 1em;
+}
+
+#block-footer a {
+  color: #9cd1f9;
+}
+
+#block-footer a:hover {
+  color: #fff;
+}
+
+@media screen and (min-width: 720px) {
+  #block-footer {
+    padding: 2em 8em;
+  }
 }

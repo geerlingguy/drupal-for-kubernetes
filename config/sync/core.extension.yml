@@ -23,6 +23,7 @@ module:
   options: 0
   page_cache: 0
   path: 0
+  pidramble_analytics: 0
   pidramble_default_content: 0
   serialization: 0
   system: 0
