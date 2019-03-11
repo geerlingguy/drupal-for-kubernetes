@@ -4,7 +4,7 @@ This module requires the [Default Content for D8](https://www.drupal.org/project
 
 To update exported content, run:
 
-    drush dcer node 1 --folder=modules/custom/pidramble_default_content/content/
+    drush dcer --folder=modules/custom/pidramble_default_content/content/ node 1
 
 You can substitute any entity type for `node` (e.g. `file`, `user`, `block_content`), and when any entity is exported, referenced entities are also exported at the same time.
 
