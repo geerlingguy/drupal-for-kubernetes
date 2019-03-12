@@ -48,6 +48,14 @@ After making any configuration changes on the website, you can export the config
 
 For more on the way this project's configuration changes are handled, and the general site development process, see the [project documentation](docs/README.md).
 
+### Exporting Content
+
+After making any content changes on the website, you can export the changes to disk so it is preserved in the codebase and installable on the production site:
+
+    docker-compose exec drupal bash -c 'drush dcer --folder=modules/custom/pidramble_default_content/content/ node 1'
+
+For more on the way this project's content changes are handled, see the [pidramble_default_content README](web/modules/custom/pidramble_default_content/README.md).
+
 ## License
 
 MIT license.
