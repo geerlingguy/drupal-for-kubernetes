@@ -11,3 +11,7 @@
 
   1. [Push the Drupal image to a Docker registry](push-to-registry.md)
   1. [Deploy Drupal to Kubernetes](deploy-drupal-kubernetes.md)
+
+## Updating Drupal and Modules
+
+  1. [Update Drupal core](update-drupal-core.md)
