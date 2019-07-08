@@ -86,6 +86,9 @@
             "initial": {
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
+            },
+            "excludes": {
+                ".htaccess"
             }
         }
     }
