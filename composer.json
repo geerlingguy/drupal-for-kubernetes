@@ -83,12 +83,12 @@
             "drush/Commands/{$name}": ["type:drupal-drush"]
         },
         "drupal-scaffold": {
+            "excludes": [
+                ".htaccess"
+            ],
             "initial": {
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
-            },
-            "excludes": {
-                ".htaccess"
             }
         }
     }
