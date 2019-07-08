@@ -11,7 +11,7 @@
 $config_directories['sync'] = '../config/sync';
 
 // Hash salt.
-$settings['hash_salt'] = '$DRUPAL_HASH_SALT';
+$settings['hash_salt'] = getenv('DRUPAL_HASH_SALT');
 
 // Disallow access to update.php by anonymous users.
 $settings['update_free_access'] = FALSE;
