@@ -58,6 +58,12 @@ So let's do something I do for all my Drupal sites: install the [Admin Toolbar](
      ```
 
   1. A minute or so later, if you log into the site using the `admin` user and the new password Drush prints to the command line, you'll see that the Slogan was reverted to being blank, as it was before you changed it.
+  1. Since there is now a 'config' directory in your project, this directory should also be copied into the production Docker container, so make sure the following line is not commented out in your `Dockerfile`:
+
+     ```
+     COPY config/ /var/www/html/config/
+     ```
+
   1. At this point, if the site's configuration is in a state that you should like, you should commit the code to Git so the configuration is tracked in your code repository—this will allow you to compare different configuration changes and choose which ones to deploy or not deploy in the future:
 
      ```

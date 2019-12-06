@@ -5,19 +5,28 @@ Part of the purpose of this project is to outline the exact steps required to bu
   1. Build the basic Drupal codebase in a new directory using the [Composer template for Drupal projects](https://github.com/drupal-composer/drupal-project):
 
      ```
-     composer create-project drupal-composer/drupal-project:8.x-dev my-drupal-site --no-interaction
+     composer -n --prefer-dist create-project drupal/recommended-project:^8 my-drupal-site
      ```
+
+  1. Install Drush, since it will be helpful for managing your Drupal project:
+
+     ```
+     cd my-drupal-site
+     composer require drush/drush
+     ```
+
+  1. Create a [`.gitignore`](../.gitignore) file to exclude any sensitive files or files that are managed by Composer from being added to your project's Git repository.
 
   1. Initialize a git repository to track all future changes in the codebase:
 
      ```
-     cd my-drupal-site
      git init
      git add -A
      git commit -m "Initial commit of my new Drupal site."
      ```
 
   1. Create a [`Dockerfile`](../Dockerfile) and [`docker-compose.yml`](../docker-compose.yml) to build a Docker image to run the site both locally and in production—using the exact same Docker container!
+    1. If using the Dockerfile from this project, comment out the three `COPY` lines under "Copy other required configuration into the container." section. Also comment out the `COPY` line that copies the `scripts/` directory.
   1. Build the docker image from the Dockerfile:
 
      ```
