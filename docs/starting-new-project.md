@@ -2,7 +2,7 @@
 
 Part of the purpose of this project is to outline the exact steps required to build _your own_ Drupal site which is deployable inside Kubernetes, so the following section outlines every step used to initialize the codebase and prep it for a container environment:
 
-  1. Build the basic Drupal codebase in a new directory using the [Composer template for Drupal projects](https://github.com/drupal-composer/drupal-project):
+  1. Build the basic Drupal codebase in a new directory using Composer with the [`drupal/recommended-project`](https://www.drupal.org/docs/develop/using-composer/using-composer-to-install-drupal-and-manage-dependencies#s-using-drupalrecommended-project) template:
 
      ```
      composer -n --prefer-dist create-project drupal/recommended-project:^8 my-drupal-site
