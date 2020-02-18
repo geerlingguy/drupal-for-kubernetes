@@ -43,7 +43,13 @@ So let's do something I do for all my Drupal sites: install the [Admin Toolbar](
 
   1. Log into the Drupal site locally (it should be running and using your local development codebase after you brought up the environment with Docker Compose).
   1. Go to the Extend page (`/admin/modules`) and install the Admin Toolbar and Admin Toolbar Extra Tools modules (and also any modules they require).
-  1. Now run the following command to tell Drupal to dump its current configuration into your 'config sync' directory (which happens to be configured in `[project root]/config/sync` by default):
+  1. Make sure you have the following setting in your `settings.php` file, which makes sure the configuration is stored in `[project root]/config/sync`:
+
+     ```
+     $settings['config_sync_directory'] = '../config/sync';
+     ```
+
+  1. Now run the following command to tell Drupal to dump its current configuration into the 'config sync' directory:
 
      ```
      docker-compose exec drupal bash -c 'drush config:export -y'
