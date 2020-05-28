@@ -1,5 +1,6 @@
 module:
   admin_toolbar: 0
+  admin_toolbar_search: 0
   admin_toolbar_tools: 0
   block: 0
   block_content: 0
@@ -23,6 +24,7 @@ module:
   options: 0
   page_cache: 0
   path: 0
+  path_alias: 0
   pidramble_analytics: 0
   pidramble_default_content: 0
   serialization: 0

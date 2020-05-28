@@ -8,7 +8,7 @@
  */
 
 // Config sync directory.
-$config_directories['sync'] = '../config/sync';
+$settings['config_sync_directory'] = '../config/sync';
 
 // Hash salt.
 $settings['hash_salt'] = getenv('DRUPAL_HASH_SALT');
