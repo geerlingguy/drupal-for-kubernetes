@@ -1,7 +1,7 @@
 uuid: e49419a1-2805-488b-bf30-247c3e41e0eb
 name: 'Raspberry Pi Dramble'
 mail: admin@example.com
-slogan: 'Drupal 8 on a cluster of Raspberry Pis'
+slogan: 'Drupal 9 on a cluster of Raspberry Pis'
 page:
   403: ''
   404: /node/29
