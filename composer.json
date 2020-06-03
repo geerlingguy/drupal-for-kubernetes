@@ -67,6 +67,9 @@
             "drush/Commands/{$name}": ["type:drupal-drush"]
         },
         "drupal-scaffold": {
+            "locations": {
+                "web-root": "./web"
+            },
             "excludes": [
                 ".htaccess"
             ],
