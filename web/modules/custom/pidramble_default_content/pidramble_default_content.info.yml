@@ -6,3 +6,4 @@ dependencies:
   - menu_link_content
   - default_content
 core: '8.x'
+core_version_requirement: ^8 || ^9
