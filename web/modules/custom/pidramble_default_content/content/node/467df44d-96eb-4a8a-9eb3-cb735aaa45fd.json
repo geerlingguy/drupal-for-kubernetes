@@ -108,7 +108,7 @@
     ],
     "changed": [
         {
-            "value": "2019-02-16T03:53:55+00:00",
+            "value": "2020-06-03T21:44:13+00:00",
             "lang": "en",
             "format": "Y-m-d\\TH:i:sP"
         }
@@ -147,9 +147,9 @@
     ],
     "body": [
         {
-            "value": "<p>The Raspberry Pi Dramble is an educational project to explore cluster configurations using inexpensive Raspberry Pi&nbsp;computers (and occasionally other low-cost development boards).<\/p>\r\n\r\n<p>This Wiki contains information about how you can get started with Raspberry Pi clustering, how to build your own Dramble, performance benchmarks for different aspects of the Pi, notes on how Drupal 8 works in high performance and high-availability environments, and more!<\/p>\r\n\r\n<p>For project source code and collaboration, please visit the Rasbperry Pi Dramble project on GitHub:<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n",
+            "value": "<p>The Raspberry Pi Dramble is an educational project to explore cluster configurations using inexpensive Raspberry Pi&nbsp;computers (and occasionally other low-cost development boards).<\/p>\r\n\r\n<p>This Wiki contains information about how you can get started with Raspberry Pi clustering, how to build your own Dramble, performance benchmarks for different aspects of the Pi, notes on how Drupal 9&nbsp;works in high performance and high-availability environments, and more!<\/p>\r\n\r\n<p>For project source code and collaboration, please visit the Rasbperry Pi Dramble project on GitHub:<\/p>\r\n\r\n<p>&nbsp;<\/p>\r\n",
             "format": "html",
-            "processed": "<p>The Raspberry Pi Dramble is an educational project to explore cluster configurations using inexpensive Raspberry Pi\u00a0computers (and occasionally other low-cost development boards).<\/p>\n\n<p>This Wiki contains information about how you can get started with Raspberry Pi clustering, how to build your own Dramble, performance benchmarks for different aspects of the Pi, notes on how Drupal 8 works in high performance and high-availability environments, and more!<\/p>\n\n<p>For project source code and collaboration, please visit the Rasbperry Pi Dramble project on GitHub:<\/p>\n\n<p>\u00a0<\/p>\n",
+            "processed": "<p>The Raspberry Pi Dramble is an educational project to explore cluster configurations using inexpensive Raspberry Pi\u00a0computers (and occasionally other low-cost development boards).<\/p>\n\n<p>This Wiki contains information about how you can get started with Raspberry Pi clustering, how to build your own Dramble, performance benchmarks for different aspects of the Pi, notes on how Drupal 9\u00a0works in high performance and high-availability environments, and more!<\/p>\n\n<p>For project source code and collaboration, please visit the Rasbperry Pi Dramble project on GitHub:<\/p>\n\n<p>\u00a0<\/p>\n",
             "summary": "",
             "lang": "en"
         }
