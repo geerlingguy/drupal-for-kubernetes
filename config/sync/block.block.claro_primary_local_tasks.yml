@@ -1,20 +1,20 @@
-uuid: 368e02ec-a02d-4f1f-9970-570194001498
+uuid: a5035982-5673-4895-8187-48575642d175
 langcode: en
 status: true
 dependencies:
   theme:
-    - seven
+    - claro
 _core:
-  default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
-id: seven_local_tasks
-theme: seven
+  default_config_hash: 7cvXIzw8NabmQCWMPqBz0mvIQZzXUZB3OeOTa5eqbCo
+id: claro_primary_local_tasks
+theme: claro
 region: header
-weight: -2
+weight: 0
 provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: 'Primary Tabs'
+  label: 'Primary tabs'
   provider: core
   label_display: '0'
   primary: true
