@@ -1,6 +1,6 @@
 {
-    "name": "drupal-composer/drupal-project",
-    "description": "Project template for Drupal 8 projects with composer",
+    "name": "geerlingguy/drupal-for-kubernetes",
+    "description": "Project to show how to manage Drupal in Kubernetes.",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "authors": [

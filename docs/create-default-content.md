@@ -31,7 +31,7 @@ Anyways, let's get started with Default Content:
   1. Log in as the user you just created, then create some nodes, taxonomy terms, blocks, or whatever you need to create to populate the important bits of your site (e.g. for a news site, post an About page, a few Articles, and a block with company information in the footer).
   1. Create a custom module to store your site's default content:
     1. Create a module directory (e.g. `mysite_default_content`) inside `web/modules/custom`.
-    1. Create a module `.info.yml` file (e.g. `mysite_default_content.info.yml`) inside the module directory (see [guide here](https://www.drupal.org/docs/8/creating-custom-modules/let-drupal-8-know-about-your-module-with-an-infoyml-file).
+    1. Create a module `.info.yml` file (e.g. `mysite_default_content.info.yml`) inside the module directory (see [guide here](https://www.drupal.org/docs/creating-custom-modules/let-drupal-know-about-your-module-with-an-infoyml-file).
   1. Now on the command line, use the Default Content module's Drush command to export the entities you just created:
 
      ```

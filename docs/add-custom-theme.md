@@ -6,7 +6,7 @@ So at some point you might want to create your own theme, and start giving your 
 
 This is something I usually do very early in the project, and I usually start pretty barebones, just styling the general layout, the text (font, heading styles, things like that), and a few very basic things.
 
-So first, create a super simple new theme, following the [Drupal 8 Theming Guide](https://www.drupal.org/docs/8/theming). You can take a look at the [`pidramble` theme](../web/themes/custom/pidramble) in this repository for a reference of a very basic functional Drupal 8 theme based on the 'Classy' theme that ships with Drupal core.
+So first, create a super simple new theme, following the [Theming Drupal Guide](https://www.drupal.org/docs/theming-drupal). You can take a look at the [`pidramble` theme](../web/themes/custom/pidramble) in this repository for a reference of a very basic functional Drupal theme based on the 'Classy' theme that ships with Drupal core.
 
 Once you create the theme (all you really need at this point is a `themename.info.yml` file—everything else just makes the theme better!), you can enable it and set it as the default:
 

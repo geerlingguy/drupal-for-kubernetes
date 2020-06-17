@@ -5,7 +5,7 @@ Part of the purpose of this project is to outline the exact steps required to bu
   1. Build the basic Drupal codebase in a new directory using Composer with the [`drupal/recommended-project`](https://www.drupal.org/docs/develop/using-composer/using-composer-to-install-drupal-and-manage-dependencies#s-using-drupalrecommended-project) template:
 
      ```
-     composer -n --prefer-dist create-project drupal/recommended-project:^8 my-drupal-site
+     composer -n --prefer-dist create-project drupal/recommended-project:^9 my-drupal-site
      ```
 
   1. Install Drush, since it will be helpful for managing your Drupal project:

@@ -4,9 +4,9 @@ Unless you're perpetually building new Drupal sites and deleting your old one af
 
 Since we built the Drupal site's codebase using Composer, we should also use Composer to upgrade Drupal and any other dependencies (e.g. modules, base themes, etc.).
 
-  1. Follow the official [Composer template for Drupal projects 'Updating Drupal Core'](https://github.com/drupal-composer/drupal-project#updating-drupal-core) directions, run:
+  1. Follow the official [Update Drupal core via Composer](https://www.drupal.org/docs/updating-drupal/update-drupal-core-via-composer) directions, and run:
      ```
-     composer update drupal/core webflo/drupal-core-require-dev "symfony/*" --with-dependencies
+     composer update drupal/core --with-dependencies
      ```
   1. After core and related dependencies have been updated, make sure you run database updates on your local site, e.g. by accessing `/update.php` or running:
      ```
