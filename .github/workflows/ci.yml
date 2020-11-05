@@ -1,0 +1,47 @@
+---
+name: CI
+'on':
+  pull_request:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "45 1 * * 2"
+
+jobs:
+
+  install:
+    name: Install
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the codebase.
+        uses: actions/checkout@v2
+
+      - name: Set up PHP 7.3.
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.3'
+
+      - name: Build Docker image.
+        run: docker build -t geerlingguy/drupal-for-kubernetes .
+
+      - name: Bring up the environment.
+        run: |
+          cp tests/docker-compose.yml ./docker-compose.yml
+          docker-compose up -d
+          while ! mysqladmin ping -h127.0.0.1 -u drupal -pdrupal --silent; do
+            sleep 1
+          done
+
+      - name: Install Drupal.
+        run: >
+          docker-compose exec drupal bash -c
+          'drush site:install minimal
+          --db-url="mysql://drupal:$DRUPAL_DATABASE_PASSWORD@$DRUPAL_DATABASE_HOST/drupal"
+          --site-name="Drupal Example Site for Kubernetes"
+          --existing-config
+          -y'
+
+      - name: Verify Drupal is running.
+        run: curl --head http://localhost/

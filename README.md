@@ -1,6 +1,6 @@
 # Drupal Example Site for Kubernetes
 
-[![Build Status](https://travis-ci.com/geerlingguy/drupal-for-kubernetes.svg?branch=master)](https://travis-ci.com/geerlingguy/drupal-for-kubernetes)
+[![CI](https://github.com/geerlingguy/drupal-for-kubernetes/workflows/CI/badge.svg?event=push)](https://github.com/geerlingguy/drupal-for-kubernetes/actions?query=workflow%3ACI)
 
 The purpose of this Drupal codebase is to demonstrate a Drupal project and configuration set up for deployment into Kubernetes or an otherwise scalable containerized environment.
 
