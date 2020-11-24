@@ -48,16 +48,6 @@
         ]
     },
     "extra": {
-        "composer-exit-on-patch-failure": true,
-        "enable-patching": true,
-        "patches": {
-            "drupal/default_content": {
-                "Run drush commands as user 1 by default": "https://www.drupal.org/files/issues/2018-09-21/account_switcher-2861591-10.patch"
-            }
-        },
-        "patchLevel": {
-            "drupal/core": "-p2"
-        },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],
