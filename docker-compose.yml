@@ -21,13 +21,13 @@ services:
     volumes: ['./:/var/www/html:rw,delegated']
 
   mysql:
-    image: mysql:5.7
+    image: mariadb:10
     container_name: drupal-mysql
     environment:
-      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
-      MYSQL_DATABASE: drupal
-      MYSQL_USER: drupal
-      MYSQL_PASSWORD: drupal
+      MARIADB_RANDOM_ROOT_PASSWORD: 'yes'
+      MARIADB_DATABASE: drupal
+      MARIADB_USER: drupal
+      MARIADB_PASSWORD: drupal
     restart: on-failure
     ports:
       - "3306:3306"
