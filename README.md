@@ -56,6 +56,14 @@ After making any content changes on the website, you can export the changes to d
 
 For more on the way this project's content changes are handled, see the [pidramble_default_content README](web/modules/custom/pidramble_default_content/README.md).
 
+### Upgrading Core (and Contrib)
+
+  1. Set up the site like normal, make sure it's installed.
+  2. Run `docker-compose exec drupal composer update` (to update everything).
+  3. Run `docker-compose exec drupal bash -c 'drush updb -y'`
+  4. Run `docker-compose exec drupal bash -c 'drush config:export -y'`
+  5. Commit any changes and push them.
+
 ## License
 
 MIT license.
