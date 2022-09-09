@@ -17,14 +17,14 @@ plugin: 'system_menu_block:wiki'
 settings:
   id: 'system_menu_block:wiki'
   label: 'Wiki Menu'
-  provider: system
   label_display: visible
+  provider: system
   level: 1
   depth: 0
   expand_all_items: false
 visibility:
   request_path:
     id: request_path
-    pages: '/wiki*'
     negate: false
     context_mapping: {  }
+    pages: '/wiki*'

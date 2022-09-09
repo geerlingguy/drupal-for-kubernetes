@@ -1,7 +1,9 @@
 uuid: 5c226519-36fa-45dc-92c2-1c44785db5e2
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - system
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous

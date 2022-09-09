@@ -15,6 +15,6 @@ plugin: pidramble_analytics
 settings:
   id: pidramble_analytics
   label: 'Pi Dramble Analytics'
-  provider: pidramble_analytics
   label_display: '0'
+  provider: pidramble_analytics
 visibility: {  }

@@ -17,8 +17,8 @@ plugin: 'block_content:f9150950-fffc-409e-9d6d-76106b3fcce5'
 settings:
   id: 'block_content:f9150950-fffc-409e-9d6d-76106b3fcce5'
   label: Footer
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
