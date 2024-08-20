@@ -6,11 +6,11 @@ For Drupal 8+, that means using _configuration_ to synchronize changes between a
 
 Before we can start doing this work, we need to make sure we have our local environment set up to allow us to work in the Docker environment, but also have our codebase changes reflected locally (outside of the running Docker container), so we can commit any changes to our Git codebase.
 
-## Local Development with `docker-compose`
+## Local Development with `docker compose`
 
 The first step is to modify the `docker-compose.yml` file so it has a `volume` which shares the local codebase into the Drupal container:
 
-  1. If you already have the Docker environment running from the previous guide, make sure it is completely removed using `docker-compose down -v`.
+  1. If you already have the Docker environment running from the previous guide, make sure it is completely removed using `docker compose down -v`.
   1. Since we'll be using the local codebase to drive the Drupal site (instead of the Drupal codebase only available inside the Drupal container), we need to install Composer dependencies locally:
 
      ```
@@ -22,7 +22,7 @@ The first step is to modify the `docker-compose.yml` file so it has a `volume` w
   1. Start the local development environment:
 
      ```
-     docker-compose up -d
+     docker compose up -d
      ```
 
   1. Install Drupal using the same Drush command used in the previous guide, [Starting a new Drupal Project](starting-new-project.md).
@@ -52,7 +52,7 @@ So let's do something I do for all my Drupal sites: install the [Admin Toolbar](
   1. Now run the following command to tell Drupal to dump its current configuration into the 'config sync' directory:
 
      ```
-     docker-compose exec drupal bash -c 'drush config:export -y'
+     docker compose exec drupal bash -c 'drush config:export -y'
      ```
 
   1. If you look inside the `config/sync` folder you should now see lots of YAML files (ending with `.yml`), containing all the details of your Drupal site's configuration.
@@ -60,7 +60,7 @@ So let's do something I do for all my Drupal sites: install the [Admin Toolbar](
   1. You can now _reinstall_ the site from scratch, but using the configuration you previously exported (so it will have the Admin Toolbar module and everything else, but not this silly slogan you don't like), by adding the flag `--existing-config` to the install command:
 
      ```
-     docker-compose exec drupal bash -c 'drush site:install minimal --db-url="mysql://drupal:$DRUPAL_DATABASE_PASSWORD@$DRUPAL_DATABASE_HOST/drupal" --site-name="My Drupal Site" --existing-config -y'
+     docker compose exec drupal bash -c 'drush site:install minimal --db-url="mysql://drupal:$DRUPAL_DATABASE_PASSWORD@$DRUPAL_DATABASE_HOST/drupal" --site-name="My Drupal Site" --existing-config -y'
      ```
 
   1. A minute or so later, if you log into the site using the `admin` user and the new password Drush prints to the command line, you'll see that the Slogan was reverted to being blank, as it was before you changed it.
